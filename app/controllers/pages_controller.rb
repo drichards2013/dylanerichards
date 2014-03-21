@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def photography
   end
+
+  def projects
+  end
 end

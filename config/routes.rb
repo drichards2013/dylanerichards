@@ -2,6 +2,7 @@ Dylanrichards::Application.routes.draw do
   get "pages/home"
   get "pages/about"
   get "pages/photography"
+  get 'pages/projects'
 
   root 'pages#home'
 
