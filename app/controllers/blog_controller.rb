@@ -4,4 +4,7 @@ class BlogController < ApplicationController
 
   def march212014
   end
+
+  def ruleofthirds
+  end
 end
