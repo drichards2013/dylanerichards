@@ -1,14 +1,40 @@
 Dylanrichards::Application.routes.draw do
+  resources :posts
+
   get "pages/home"
   get "pages/about"
   get "pages/photography"
   get 'pages/projects'
+  get 'pages/running'
+  get 'pages/yoga'
+  get 'pages/mindfulness'
+  get 'pages/meditation'
+  get 'pages/contact'
+
+
+
 
   root 'pages#home'
 
   get 'blog/march202014'
   get 'blog/march212014'
   get 'blog/ruleofthirds'
+
+
+  def running
+  end
+
+  def yoga
+  end
+
+  def mindfulness
+  end
+
+  def meditation
+  end
+
+  def contact
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

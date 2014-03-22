@@ -10,4 +10,19 @@ class PagesController < ApplicationController
 
   def projects
   end
+
+  def running
+  end
+
+  def yoga
+  end
+
+  def mindfulness
+  end
+
+  def meditation
+  end
+
+  def contact
+  end
 end
