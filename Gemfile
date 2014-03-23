@@ -18,6 +18,7 @@ gem 'bootstrap-sass'
 gem 'acts-as-taggable-on'
 
 
+
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
                               :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 
