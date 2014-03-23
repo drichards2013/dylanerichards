@@ -15,7 +15,11 @@ group :production do
 end
 
 gem 'bootstrap-sass'
-gem 'masonry-rails'
+gem 'acts-as-taggable-on'
+
+
+gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
+                              :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 
 
 # Use SCSS for stylesheets

@@ -1,1 +1,10 @@
 <h1>meditation</h1>
+<br>
+<br>
+
+<h4>posts</h4>
+<ul>
+  <% @posts.each do |post| %>
+  <li><%= link_to post.title, post %></li>
+  <% end %>
+</ul>

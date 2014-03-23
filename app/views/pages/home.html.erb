@@ -1,3 +1,12 @@
 <h1>dylan e. richards</h1>
 
-<p>My name's Dylan E. Richards. This is my website.</p> <br>
+<div id="tag_cloud">
+
+  <!-- commenting out the tag cloud -->
+
+  <%# tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+    <%#= link_to tag.name, tag_path(tag.name), class: css_class %>
+  <%# end %>
+</div>
+
+<p>my name's dylan e. richards. this is my website.</p> <br>
