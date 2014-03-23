@@ -9,7 +9,7 @@ lynda : <%= link_to 'iphoneography course', 'http://www.lynda.com/Photography-tu
 <h4>posts</h4>
 <ul>
   <% @posts.each do |post| %>
-  <li><%= link_to post.title, post %></li>
+  <li><%= post.created_at.to_time.strftime('%B %d %Y') %> :: <%= link_to post.title, post %></li>
   <% end %>
 </ul>
 
