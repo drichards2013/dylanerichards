@@ -9,7 +9,6 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <%= favicon_link_tag 'favicon.ico' %>
 
   <script type="text/javascript">
@@ -27,10 +26,22 @@
   </script>
 </head>
 <body>
+  
 
 <div class="container">
+  <% flash.each do |name, msg| %>
+       <%= content_tag(:div, msg, class: "alert alert-info") %>
+  <% end %>
   <%= render 'layouts/navbar' %>
   <%= yield %>
+
+  <div class="footer">
+    <% if !current_user %>
+      <%= link_to 'admin login', new_user_session_path, class: 'btn btn-primary btn-sm' %> 
+    <% else %>
+      <%= link_to 'logout', destroy_user_session_path, method: :delete, class: 'btn btn-default btn-sm' %>
+    <% end %>
+  </div>
 </div>
 
 

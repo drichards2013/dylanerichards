@@ -16,7 +16,7 @@ end
 
 gem 'bootstrap-sass'
 gem 'acts-as-taggable-on'
-
+gem 'devise'
 
 
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
