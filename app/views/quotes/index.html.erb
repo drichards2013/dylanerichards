@@ -8,7 +8,7 @@
 
 <% for quote in @quotes %>
   <blockquote>
-    <%= "#{quote.body}" %>
+    "<%= "#{quote.body}" %>"
     <small><%= quote.author %></small>
   </blockquote>
   <% if current_user %>
