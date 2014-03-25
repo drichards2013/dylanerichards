@@ -1,4 +1,6 @@
 Dylanrichards::Application.routes.draw do
+  resources :quotes
+
   resources :photos
 
   devise_for :users

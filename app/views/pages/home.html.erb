@@ -9,10 +9,17 @@
   <%# end %>
 </div>
 
+
 <p>my name's dylan e. richards. this is my website.</p> <br>
+
+<blockquote>
+  "Less is more."
+  <small>Ludwig Mies van der Rohe</small>
+</blockquote>
 
 <% if current_user %>
   <%= link_to 'new post', new_post_path %> | 
-  <%= link_to 'new photo', new_photo_path %>
+  <%= link_to 'new photo', new_photo_path %> |
+  <%= link_to 'new quote', new_quote_path %> 
 <% end %>
 
