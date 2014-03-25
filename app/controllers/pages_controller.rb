@@ -8,6 +8,7 @@ class PagesController < ApplicationController
 
   def photography
     @posts = Post.tagged_with(["photography", 'iphoneography'], :any => true)
+    @photos = Photo.all
   end
 
   def projects
