@@ -8,7 +8,7 @@ class PagesController < ApplicationController
 
   def photography
     @posts = Post.tagged_with(["photography", 'iphoneography'], :any => true)
-    @photos = Photo.all
+    @photos = Photo.all.order("created_at DESC")
   end
 
   def projects
