@@ -7,6 +7,8 @@ class PagesController < ApplicationController
   end
 
   def programming
+    @posts = Post.tagged_with(["programming", 'web development'], :any => true).order("created_at DESC")
+
   end
 
   def photography
@@ -18,19 +20,19 @@ class PagesController < ApplicationController
   end
 
   def running
-    @posts = Post.tagged_with(["running"], :any => true)
+    @posts = Post.tagged_with(["running"], :any => true).order("created_at DESC")
   end
 
   def yoga
-    @posts = Post.tagged_with(["yoga"], :any => true)
+    @posts = Post.tagged_with(["yoga"], :any => true).order("created_at DESC")
   end
 
   def mindfulness
-    @posts = Post.tagged_with(["mindfulness"], :any => true)
+    @posts = Post.tagged_with(["mindfulness"], :any => true).order("created_at DESC")
   end
 
   def meditation
-    @posts = Post.tagged_with(["meditation"], :any => true)
+    @posts = Post.tagged_with(["meditation"], :any => true).order("created_at DESC")
   end
 
   def contact
