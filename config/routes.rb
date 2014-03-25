@@ -15,7 +15,7 @@ Dylanrichards::Application.routes.draw do
   get 'pages/mindfulness'
   get 'pages/meditation'
   get 'pages/contact'
-  get 'pages/goals'
+  get 'pages/programming'
 
   get 'tags/:tag', to: 'posts#index', as: :tag
 

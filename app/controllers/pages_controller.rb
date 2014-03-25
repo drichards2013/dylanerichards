@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def goals
+  def programming
   end
 
   def photography
