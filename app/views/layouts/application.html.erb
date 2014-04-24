@@ -10,6 +10,7 @@
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -40,9 +41,11 @@
 
   <%= render 'layouts/navbar' %>
   <% if !current_user %>
-    <%= link_to 'admin login', new_user_session_path, class: 'btn btn-primary btn-xs' %> 
+    <%= link_to 'admin login', new_user_session_path, class: 'btn btn-default btn-xs' %> 
   <% else %>
-    <%= link_to 'logout', destroy_user_session_path, method: :delete, class: 'btn btn-default btn-xs' %>
+    <%= link_to "logout", destroy_user_session_path, :method => :delete, class: 'btn btn-xs btn-default' %>
+    
+
   <% end %>
   <%= yield %>
 
