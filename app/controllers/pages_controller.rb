@@ -8,7 +8,6 @@ class PagesController < ApplicationController
 
   def programming
     @posts = Post.tagged_with(["programming", 'web development'], :any => true).order("created_at DESC")
-
   end
 
   def photography
@@ -32,6 +31,10 @@ class PagesController < ApplicationController
   end
 
   def meditation
+    @posts = Post.tagged_with(["meditation"], :any => true).order("created_at DESC")
+  end
+
+  def webdevelopment
     @posts = Post.tagged_with(["meditation"], :any => true).order("created_at DESC")
   end
 
