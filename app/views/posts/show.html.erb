@@ -12,9 +12,14 @@
 	<br>
 
 
-	  <h1>
+	  <h1 class='posttitle'>
 	    <%= @post.title.downcase %>
 	  </h1>
+
+	  <div class="postdate">
+	  	<%= @post.created_at.to_time.strftime('%B %d %Y') %> <br> <br>
+	  </div>
+	  
 
 
 

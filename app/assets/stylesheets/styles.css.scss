@@ -19,6 +19,15 @@ btn-primary {
  	max-width: 42.5em;
  }
 
+ .posttitle {
+ 	text-align: center;
+ }
+
+ .postdate {
+ 	text-align: center;
+ 	color: #999;
+ }
+
  a:link {color:#16a085;}      /* unvisited link */
  a:visited {color:#2c3e50;}   /* visited link */
  a:hover {color:#1abc9c;}     /* mouse over link */
