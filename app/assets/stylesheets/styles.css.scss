@@ -2,9 +2,10 @@ btn-primary {
 	background-color: #000
 }
 
-html {
+.container {
 	font-family: "Droid Serif", "serif";
 }
+
 
 
 
@@ -12,7 +13,7 @@ html {
  	color: #1abc9c;
  }
 
- a:link {color:#2c3e50;}      /* unvisited link */
- a:visited {color:#16a085;}   /* visited link */
+ a:link {color:#16a085;}      /* unvisited link */
+ a:visited {color:#2c3e50;}   /* visited link */
  a:hover {color:#1abc9c;}     /* mouse over link */
  a:active {color:#0000FF;}    /* selected link */
