@@ -14,8 +14,16 @@ btn-primary {
 
  .highlight {
  	color: #1abc9c;
+
  }
 
+
+.underline {
+	color: #333;
+	border-bottom: 1px solid #f39c12;
+	border-width: 2px;
+
+}
 
  #post {
  	margin: 0 auto;
@@ -25,9 +33,9 @@ btn-primary {
 
  .posttitle {
  	text-align: center;
- 	border-bottom: #f39c12 solid;
+ 	text-decoration: underline;
  	padding-bottom: 10px;
- 	border-width: 2px;
+ 	
  }
 
  .postdate {
