@@ -1,5 +1,20 @@
+
+nav {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.navspan {
+	width: auto;
+	height:3px;
+	background-color: #333;
+	clear: both;
+	margin-bottom: 10px;
+
+}
+
 .postdate {
-	text-align: center
+	text-align: center;
 }
 
 btn-primary {
@@ -8,13 +23,13 @@ btn-primary {
 
 .container {
 	font-family: "Droid Serif", "serif";
-
+	background-color: #FDFBF5;
 }
 
 
- .highlight {
- 	color: #1abc9c;
 
+.highlight {
+ 	color: #1abc9c;
  }
 
 
@@ -50,7 +65,11 @@ btn-primary {
  	color: #999;
  }
 
+
+
  a:link {color:#16a085;}      /* unvisited link */
  a:visited {color:#2c3e50;}   /* visited link */
  a:hover {color:#1abc9c;}     /* mouse over link */
  a:active {color:#0000FF;}    /* selected link */
+
+
