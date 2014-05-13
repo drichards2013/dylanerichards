@@ -1,10 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+
+
+<%= link_to 'Back', :back %> 
   <% if current_user %>
-  <%= link_to 'Edit', edit_photo_path(@photo) %> |
+
+<br> <br>
+  
+
+
+  <%= link_to 'Edit', edit_photo_path(@photo) %> | <%= link_to 'Destroy', @photo, method: :delete, data: { confirm: 'Are you sure?' } %>
   <% end %>
-  <%= link_to 'Back', :back %>
+  
 <br>
 
   <%#= @photo.name %>
