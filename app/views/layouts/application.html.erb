@@ -45,13 +45,7 @@
   <% end %>
 
   <%= render 'layouts/navbar' %>
-  <% if !current_user %>
-    <%= link_to 'admin login', new_user_session_path, class: 'btn btn-default btn-xs' %> 
-  <% else %>
-    <%= link_to "logout", destroy_user_session_path, :method => :delete, class: 'btn btn-xs btn-default' %>
-    
 
-  <% end %>
   <%= yield %>
 
 
