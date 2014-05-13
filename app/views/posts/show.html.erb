@@ -11,10 +11,11 @@
 
 	<br>
 
-
-	  <h1 class='posttitle'>
+		<h1 class='posttitle underline_text'>
 	    <%= @post.title.downcase %>
 	  </h1>
+
+	  
 
 	  <div class="postdate">
 	  	<%= @post.created_at.to_time.strftime('%B %d %Y') %> <br> <br>
