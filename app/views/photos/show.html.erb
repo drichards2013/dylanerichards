@@ -3,7 +3,7 @@
 <p>
 
 
-<%= link_to 'Back', :back %> 
+
   <% if current_user %>
 
 <br> <br>
@@ -14,9 +14,12 @@
   <% end %>
   
 <br>
-
+<%= link_to 'Back', :back %> <br>
   <%#= @photo.name %>
-  <%= image_tag @photo.image.url, width: '500', class: 'photoshow' %>
+  <div class="photoshow">
+  	<%= image_tag @photo.image.url, width: '500', class: 'photoshow' %>
+  </div>
+  
 </p>
 
 
