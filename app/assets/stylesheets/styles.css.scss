@@ -1,5 +1,5 @@
 .body {
-	background-color: #FFFFF0 ;
+	background-color: #FFFFF9 ;
 }
 
 
@@ -92,29 +92,27 @@ nav {	margin-top: 10px;}
 	text-align: center;
 }
 
-    .navbar-inner{
-    background:transparent !important;
-    border-color: transparent !important;
-    }
-.navbar-inner container{
-    background:transparent !important;
-    border-color: transparent !important;
-    }
-.navbar{
-    background:transparent !important;
-    border-color: transparent !important;
-    }
-#nav-main{
-    background:transparent !important;
-    border-color: transparent !important;
-    }
-#banner{
-    background:transparent !important;
-    border-color: transparent !important;
-    }​
 
+.navbar {
+    background: transparent !important;
+    border-color: transparent !important;
+}
 
+.navbar-nav li a {
+	color:#16a085 !important;
+}
 
+.navbar-nav li a:visited {
+	color:#2c3e50 !important;
+}
+
+.navbar-nav li a:hover {
+	color:#1abc9c !important;
+}
+
+.navbar-nav li a:active {
+	color:#0000ff;
+}
 
 
 
