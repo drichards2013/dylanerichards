@@ -3,21 +3,9 @@
 }
 
 
+nav {	margin-top: 10px;}
 
-nav {
-	
-	margin-top: 10px;
-}
 
-.navspan {
-	width: auto;
-	height:1px;
-	background-color: #333;
-	clear: both;
-	margin-bottom: 10px;
-	margin-top: 40px;
-
-}
 
 .homephoto {
 	width: 14em;
@@ -95,8 +83,8 @@ nav {
  }
 
  .navbar {
- 	border: none;
- 	background: none;
+    background-color: transparent;
+    background: transparent;
  }
 
 
@@ -104,11 +92,28 @@ nav {
 	text-align: center;
 }
 
-#Absolute-Center {
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
+    .navbar-inner{
+    background:transparent !important;
+    border-color: transparent !important;
+    }
+.navbar-inner container{
+    background:transparent !important;
+    border-color: transparent !important;
+    }
+.navbar{
+    background:transparent !important;
+    border-color: transparent !important;
+    }
+#nav-main{
+    background:transparent !important;
+    border-color: transparent !important;
+    }
+#banner{
+    background:transparent !important;
+    border-color: transparent !important;
+    }​
+
+
 
 
 
