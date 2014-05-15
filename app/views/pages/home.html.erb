@@ -1,12 +1,28 @@
 <br>
-<% if !current_user %>
-  <%= link_to 'admin login', new_user_session_path, class: 'btn btn-default btn-xs' %> 
-<% else %>
-  <%= link_to "logout", destroy_user_session_path, :method => :delete, class: 'btn btn-xs btn-default' %>
-  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-<% end %>
-<h1>dylan <span class='highlight'>e.</span> richards</h1>
+<div id="dylanrichards">
+  <h1>dylan <span class='highlight'>e.</span> richards</h1>
+  <blockquote>
+    "There is nothing either good or bad, but thinking makes it so."
+    <small>William Shakespeare</small>
+  </blockquote>
+</div>
+
+
+
 
 
 <div id="tag_cloud">
@@ -19,17 +35,10 @@
 </div>
 
 
-<p>my name's dylan e. richards.</p> <br>
 
 
 
-<blockquote>
-  "There is nothing either good or bad, but thinking makes it so."
-  <small>William Shakespeare</small>
 
-
-  
-</blockquote>
 
 <% if current_user %>
   <%= link_to 'new post', new_post_path %> | 
@@ -37,3 +46,13 @@
   <%= link_to 'new quote', new_quote_path %> 
 <% end %>
 
+
+
+<br>
+<% if !current_user %>
+  <%= link_to 'admin login', new_user_session_path, class: 'btn btn-default btn-xs admin-button' %> 
+<% else %>
+  <%= link_to "logout", destroy_user_session_path, :method => :delete, class: 'btn btn-xs btn-default admin-button' %>
+  
+
+<% end %>
