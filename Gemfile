@@ -11,6 +11,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+
+gem "font-awesome-sass"
 gem 'bootstrap-sass'
 gem 'acts-as-taggable-on'
 gem 'devise'
