@@ -21,9 +21,12 @@
 	  
 
 	  <div class="postdate">
-	  	<%= @post.created_at.to_time.strftime('%B %d %Y') %> <br> <br>
+	  	<%= @post.created_at.to_time.strftime('%B %d %Y') %> <br>
+	  	<small>in <i><%= @post.tag_list %></i></small>
 	  </div>
-	  
+	  <br>
+	  <br>
+			
 
 	
 	<p>

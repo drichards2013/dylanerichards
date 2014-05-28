@@ -20,16 +20,21 @@
       <ul class="nav navbar-nav navbar-right">
         
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to 'Archive', posts_path %></li>
-        <li><%= link_to 'Meditation', pages_meditation_path %></li>
-        <li><%= link_to 'Mindfulness', pages_mindfulness_path %></li>
-        <li><%= link_to "Photography", pages_photography_path %></li>
-        <li><%= link_to 'Programming', pages_programming_path %></li>
+        <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to 'Archive', posts_path %></li>
+                    <li><%= link_to 'Meditation', pages_meditation_path %></li>
+                    <li><%= link_to 'Mindfulness', pages_mindfulness_path %></li>
+                    <li><%= link_to "Photography", pages_photography_path %></li>
+                    <li><%= link_to 'Programming', pages_programming_path %></li>
+                    <li><%= link_to 'Running', pages_running_path %></li>
+
+                  </ul>
+                </li>
+        
         <li><%= link_to 'Projects', pages_projects_path %> </li>
         <li><%= link_to 'Quotes', quotes_path %></li>
-        <li><%= link_to 'Running', pages_running_path %></li>
-        
-
       </ul>
     </div>
   </div>
