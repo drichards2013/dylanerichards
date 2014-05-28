@@ -1,19 +1,17 @@
 <br>
 
-<!-- modal-gallery is the modal dialog used for the image gallery -->
 
 
 
 <div id="photos">
-    <% for photo in @photos %>
-      <%= link_to (image_tag photo.image.url(:medium), :rel => 'gallery'), (photo) %>
+    <% @photos.each do |photo| %>
+      <%= link_to (image_tag photo.image.url(:medium)), photo %>
     <% end %>
 </div>
  
 
 
-
-
+   
 
 
 
