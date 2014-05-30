@@ -19,6 +19,7 @@ gem 'devise'
 gem "paperclip", '~> 3.4.1'
 gem 'cocaine', '~> 0.5.1'
 gem 'aws-sdk', '~> 1.20.0'
+gem 'fancybox2-rails'
 
 
 

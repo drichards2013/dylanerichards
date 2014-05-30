@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require fancybox
 //= require bootstrap
 //= require bootstrap-wysihtml5/b3
 //= require_tree .
@@ -24,3 +25,7 @@ $(document).ready(function(){
   });
 
 })
+
+$(document).ready(function() {
+  $("a.fancybox").fancybox();
+});
