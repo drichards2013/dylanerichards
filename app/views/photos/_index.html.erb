@@ -5,21 +5,8 @@
 
 <div id="photos">
     <% @photos.each do |photo| %>
-      <%= link_to (image_tag photo.image.url(:medium)), '#photo', class: 'fancybox' %>
+      <%= link_to (image_tag photo.image.url(:medium)), photo %>
     <% end %>
 </div>
  
-
-
-   
-
-<div style="display:none;">
-  
-  <% for photo in @photos %>
-  <div id="photo">
-  <%= image_tag photo.image.url, width: '500' %>
-  </div>
-  <% end %>
-  
-</div>
 
