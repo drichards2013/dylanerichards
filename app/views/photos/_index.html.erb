@@ -3,10 +3,13 @@
 
 
 
-<div id="photos">
+<!-- <div id="photos">
     <% @photos.each do |photo| %>
       <%= link_to (image_tag photo.image.url(:medium)), photo %>
     <% end %>
-</div>
+</div> -->
  
 
+<% @photos.each do |photo| %>
+<%=  image_tag(photo.image.url(:medium)) %>
+  <% end %>
