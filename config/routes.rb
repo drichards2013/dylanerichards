@@ -11,15 +11,12 @@ Dylanrichards::Application.routes.draw do
   
 
   resources :posts
+  get 'blog' => 'posts#index', as: 'blog'
+
 
   get "pages/home"
   get "pages/about"
-  get "pages/photography"
-  get 'pages/projects'
-  get 'pages/running'
   get 'pages/yoga'
-  get 'pages/mindfulness'
-  get 'pages/meditation'
   get 'pages/contact'
   get 'pages/programming'
 
