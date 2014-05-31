@@ -24,6 +24,7 @@ Dylanrichards::Application.routes.draw do
   get 'pages/programming'
 
 
+
   get 'photography' => 'pages#photography', as: 'photography'
   get 'about' => 'pages#about', as: 'about'
   get 'projects' => 'pages#projects', as: 'projects'
