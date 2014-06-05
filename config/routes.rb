@@ -10,7 +10,8 @@ Dylanrichards::Application.routes.draw do
 
   
 
-  resources :posts
+  resources :posts, :path => "blog"
+  
   get 'blog' => 'posts#index', as: 'blog'
 
 
