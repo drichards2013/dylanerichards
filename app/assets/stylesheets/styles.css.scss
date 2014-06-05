@@ -59,10 +59,13 @@ nav {	margin-top: 10px;}
 
  #photos {
  	text-align: center;
+ 	font-size: 0; //	images right against each other
  }
 
  #photos img {
  	margin: 0;
+ 	text-align: center;
+
  	// float: left;
  }
 
