@@ -60,9 +60,9 @@
 
 <br>
 <% if !current_user %>
-  <%= link_to 'admin login', new_user_session_path, class: 'btn btn-default btn-xs admin-button' %> 
+  <%= link_to "hey, dylan :)", new_user_session_path, class: 'btn btn-default btn-xs admin-button' %> 
 <% else %>
-  <%= link_to "logout", destroy_user_session_path, :method => :delete, class: 'btn btn-xs btn-default admin-button' %>
+  <%= link_to "bye, dylan :)", destroy_user_session_path, :method => :delete, class: 'btn btn-xs btn-default admin-button' %>
   
 
 <% end %>
