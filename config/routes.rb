@@ -26,10 +26,10 @@ Dylanrichards::Application.routes.draw do
   get 'photography' => 'pages#photography', as: 'photography'
   get 'about' => 'pages#about', as: 'about'
   get 'projects' => 'pages#projects', as: 'projects'
-  get 'blog/running' => 'pages#running', as: 'running'
-  get 'blog/mindfulness' => 'pages#mindfulness', as: 'mindfulness'
-  get 'blog/meditation' => 'pages#meditation', as: 'meditation'
-  get 'blog/programming' => 'pages#programming', as: 'programming'
+  get 'tags/running' => 'pages#running', as: 'running'
+  get 'tags/mindfulness' => 'pages#mindfulness', as: 'mindfulness'
+  get 'tags/meditation' => 'pages#meditation', as: 'meditation'
+  get 'tags/programming' => 'pages#programming', as: 'programming'
   get 'contact' => 'pages#contact', as: 'contact'
 
 
