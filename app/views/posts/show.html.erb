@@ -22,7 +22,7 @@
 
 	  <div class="postdate">
 	  	<%= @post.created_at.to_time.strftime('%B %d %Y') %> <br>
-	  	<small><i><%= @post.tag_list %></i></small>
+	  	<small><i><%= @post.tag_list.sort_by!{ |tag| tag.downcase } %></i></small>
 	  </div>
 	  <br>
 	  <br>
