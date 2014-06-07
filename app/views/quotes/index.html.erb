@@ -1,21 +1,25 @@
-<h1 class='posttitle dylanrichards'>quotes</h1>
-<br>
-<% if current_user %>
-<%= link_to 'New Quote', new_quote_path %>
-<% end %>
-<br>
-<br>
+<div id="post">
+	<h1 class='posttitle dylanrichards'>quotes</h1>
+	<br>
+	<% if current_user %>
+	<%= link_to 'New Quote', new_quote_path %>
+	<% end %>
+	<br>
+	<br>
 
-<% for quote in @quotes %>
-  <blockquote>
-    "<%= "#{quote.body}" %>"
-    <small><%= quote.author %></small>
-  </blockquote>
-  <% if current_user %>
-    <%= link_to 'Edit', edit_quote_path(quote) %>
-    <%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %>
-  <% end %>
-<% end %>
+	<% for quote in @quotes %>
+	  <blockquote>
+	    "<%= "#{quote.body}" %>"
+	    <small><%= quote.author %></small>
+	  </blockquote>
+	  <% if current_user %>
+	    <%= link_to 'Edit', edit_quote_path(quote) %>
+	    <%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %>
+	  <% end %>
+	<% end %>
+</div>
+
+
 
 
       
