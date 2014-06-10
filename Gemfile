@@ -19,7 +19,7 @@ gem 'devise'
 gem "paperclip", '~> 3.4.1'
 gem 'cocaine', '~> 0.5.1'
 gem 'aws-sdk', '~> 1.20.0'
-gem 'mail_form'
+
 
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
                               :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
