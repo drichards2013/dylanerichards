@@ -18,12 +18,11 @@
 <div id="dylanrichards">
   <h1 class='dylanrichards'>dylan e<span class='highlight'>.</span> richards</h1>
   <blockquote id='homequote'>
-     "<%=  "#{@quote.body}" %>"
+     <%= fa_icon 'quote-left', class: 'leftquote' %> <%=  "#{@quote.body}" %>
 
      <br>
 
 
-  <!--<%= icon'quote-left' %>-->
 
   <small><%= "#{@quote.author}" %></small>
 

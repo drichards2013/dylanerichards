@@ -12,7 +12,7 @@ group :production do
 end
 
 
-gem "font-awesome-sass"
+gem "font-awesome-rails"
 gem 'bootstrap-sass'
 gem 'acts-as-taggable-on'
 gem 'devise'
