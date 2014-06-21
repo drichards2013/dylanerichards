@@ -4,7 +4,7 @@
 
 <div id="photos">
   <% @photos.each do |photo| %>
-  <%= link_to (image_tag photo.image.url(:medium)), photo %>
+  <%= link_to (image_tag photo.image.url(:medium)), photo, rel: 'photos', data: { colorbox_static: true, photo: true } %>
   <% end %>
 </div>
  
