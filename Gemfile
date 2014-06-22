@@ -12,7 +12,6 @@ group :production do
 end
 
 
-gem "font-awesome-rails"
 gem 'colorbox-rails'
 gem 'bootstrap-sass'
 gem 'acts-as-taggable-on'
