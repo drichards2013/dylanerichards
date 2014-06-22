@@ -1,10 +1,11 @@
 <div id="post">
-	<h1 class='posttitle dylanrichards'>quotes</h1>
+	<h1 class='posttitle dylanrichards'>
+		<i class="fa fa-comment-o fa-2x"></i>
+	</h1>
 	<br>
 	<% if current_user %>
 	<%= link_to 'New Quote', new_quote_path %>
 	<% end %>
-	<br>
 	<br>
 
 	<% for quote in @quotes %>
