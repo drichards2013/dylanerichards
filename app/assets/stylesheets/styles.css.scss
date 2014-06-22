@@ -107,6 +107,11 @@ nav {	margin-top: 10px;}
  }
 
 
+ .navbar-nav li a:visited {
+ 	color: #777 !important;
+ }
+
+
 #dylanrichards {
 	text-align: center;
 }
@@ -124,9 +129,7 @@ nav {	margin-top: 10px;}
 	color:#16a085 !important;
 }
 
-.navbar-nav li a:visited {
-	color:#2c3e50 !important;
-}
+
 
 .navbar-nav li a:hover {
 	color:#1abc9c !important;
@@ -142,6 +145,10 @@ nav {	margin-top: 10px;}
 
 .center {
 	text-align: center;
+}
+
+.navbar-default .navbar-brand {
+	color: #16a085 !important;
 }
 
 
