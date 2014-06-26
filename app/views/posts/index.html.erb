@@ -6,7 +6,7 @@
 	<ul>
 	  <% @posts.each do |post| %>
 	  
-	    <li> <%= post.created_at.to_time.strftime('%B %d %Y') %> :: <%= link_to post.title, post %> 
+	    <li> <%= post.created_at.to_time.strftime('%B %d %Y') %> :: <%= link_to post.title, post %>
 	      <% if current_user %>::
 	        <%= link_to 'Edit', edit_post_path(post) %>
 	        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
@@ -14,12 +14,11 @@
 	    </li>
 	    <% end %>  
 	</ul>
+	<%= will_paginate @posts %>
 </div>
 
 
 
-
-<%= will_paginate @posts %>
 
 
     
