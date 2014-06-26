@@ -43,6 +43,8 @@ GEM
     bcrypt (3.1.7)
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
+    bootstrap-will_paginate (0.0.10)
+      will_paginate
     builder (3.1.4)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -159,6 +161,7 @@ DEPENDENCIES
   acts-as-taggable-on
   aws-sdk (~> 1.20.0)
   bootstrap-sass
+  bootstrap-will_paginate
   bootstrap-wysihtml5-rails!
   cocaine (~> 0.5.1)
   coffee-rails (~> 4.0.0)
