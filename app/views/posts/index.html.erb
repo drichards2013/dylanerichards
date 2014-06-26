@@ -1,21 +1,25 @@
-<br>
-<br>
-<br>
-<h4>all my posts</h4>
-<br>
+<div id="post">
+	<h1 class="posttitle dylanrichards">
+		<i class="fa fa-pencil fa-2x"></i>
+	</h1>
+	<br>
+	<ul>
+	  <% @posts.each do |post| %>
+	  
+	    <li> <%= post.created_at.to_time.strftime('%B %d %Y') %> :: <%= link_to post.title, post %> 
+	      <% if current_user %>::
+	        <%= link_to 'Edit', edit_post_path(post) %>
+	        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+	      <% end %>
+	    </li>
+	    <% end %>  
+	</ul>
+</div>
 
 
-<ul>
-  <% @posts.each do |post| %>
-  
-    <li> <%= post.created_at.to_time.strftime('%B %d %Y') %> :: <%= link_to post.title, post %> 
-      <% if current_user %>::
-        <%= link_to 'Edit', edit_post_path(post) %>
-        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <% end %>
-    </li>
-    <% end %>  
-</ul>
+
+
+<%= will_paginate @posts %>
 
 
     
