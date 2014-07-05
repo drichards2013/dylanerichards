@@ -21,6 +21,7 @@ gem 'cocaine', '~> 0.5.1'
 gem 'aws-sdk', '~> 1.20.0'
 gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
+gem 'geocoder'
 
 
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
