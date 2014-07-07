@@ -24,7 +24,8 @@ $(document).ready(function(){
     $(elem).wysihtml5();
   });
 
-  $('.fadein').addClass('animated fadeInDown')
+  $('.fadein').addClass('animated fadeInDown');
+  $('.pagetitle').addClass('animated bounceInDown');
 })
 
 
