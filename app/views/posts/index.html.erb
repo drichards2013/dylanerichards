@@ -5,7 +5,6 @@
 	<br>
 	<ul>
 	  <% @posts.each do |post| %>
-	  
 	    <li> <%= post.created_at.to_time.strftime('%B %d %Y') %> :: <%= link_to post.title, post %>
 	      <% if current_user %>::
 	        <%= link_to 'Edit', edit_post_path(post) %>
@@ -16,12 +15,7 @@
 	</ul>
 	<%= will_paginate @posts %>
 </div>
-
-
-
-
-
-    
+   
 <br>
 <br>
 

@@ -11,7 +11,6 @@ group :production do
   gem 'rails_12factor'
 end
 
-
 gem 'colorbox-rails'
 gem 'bootstrap-sass'
 gem 'acts-as-taggable-on'
@@ -21,8 +20,6 @@ gem 'cocaine', '~> 0.5.1'
 gem 'aws-sdk', '~> 1.20.0'
 gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
-gem 'geocoder'
-
 
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
                               :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
