@@ -7,7 +7,6 @@
 	font-size: 150%;
 }
 
-
 nav {	margin-top: 10px;}
 
 .tags {
@@ -31,29 +30,21 @@ nav {	margin-top: 10px;}
 	margin-left: 269px !important;
 }
 
-
-
-
 .container {
-	font-family: "Droid Serif", "serif";
-	
+	font-family: "Droid Serif", "serif";	
 }
 
 .dylanrichards {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 
-
-
 .highlight {
  	color: #16a085;
  }
 
-
  .admin-button {
  	clear: both;
  }
-
 
 .underline {
 	color: #333;
@@ -63,8 +54,8 @@ nav {	margin-top: 10px;}
 
 }
 
- #post {
- 	margin: 0 auto;
+#post {
+	margin: 0 auto;
  	max-width: 42.5em;
  }
 
@@ -76,10 +67,7 @@ nav {	margin-top: 10px;}
  #photos img {
  	margin: 0;
  	text-align: center;
-
- 	// float: left;
  }
-
 
  .posttitle {
 
@@ -87,7 +75,6 @@ nav {	margin-top: 10px;}
  	color: #333;
  	margin-top: 30px;
  }
-
 
 .span {
 	background-color: #F3B562;
@@ -106,11 +93,9 @@ nav {	margin-top: 10px;}
     background: transparent;
  }
 
-
  .navbar-nav li a:visited {
  	color: #777 !important;
  }
-
 
 #dylanrichards {
 	text-align: center;
@@ -128,8 +113,6 @@ nav {	margin-top: 10px;}
 .navbar-nav li a {
 	color:#16a085 !important;
 }
-
-
 
 .navbar-nav li a:hover {
 	color:#1abc9c !important;
@@ -172,8 +155,6 @@ li .contacticon {
 .pagination > li > a {
 	color: #16a085;
 }
-
-
 
  a:link {color:#16a085;}      /* unvisited link */
  a:visited {color:#777;}   /* visited link */
