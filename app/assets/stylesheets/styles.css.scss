@@ -156,6 +156,21 @@ li .contacticon {
 	color: #16a085;
 }
 
+#overlay {
+	display: none;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+#overlay img {
+	margin-top: 10%;
+}
+
  a:link {color:#16a085;}      /* unvisited link */
  a:visited {color:#777;}   /* visited link */
  a:hover {color:#1abc9c;}     /* mouse over link */
