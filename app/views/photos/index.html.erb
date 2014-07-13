@@ -3,14 +3,11 @@
 </h1>
 <br>
 
-<div id="imageGallery">
-	<div id="photos">
-	  <% @photos.each do |photo| %>
-	  <%= link_to (image_tag photo.image.url(:medium)), photo %>
-	  <% end %>
-	</div>
-	 
+<div id="photos">
+  <% @photos.each do |photo| %>
+  <%= link_to (image_tag photo.image.url(:medium)), photo %>
+  <% end %>
 </div>
-
+ 
 
 
