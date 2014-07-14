@@ -18,6 +18,7 @@
 	    <%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %>
 	  <% end %>
 	<% end %>
+	<%= will_paginate @quotes %>
 </div>
 
 
