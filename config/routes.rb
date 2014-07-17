@@ -1,5 +1,6 @@
 Dylanrichards::Application.routes.draw do
   get "jquery/practice"
+  
   resources :quotes
 
   resources :photos
