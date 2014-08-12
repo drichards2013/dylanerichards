@@ -2,42 +2,40 @@ class PagesController < ApplicationController
   def home
     @posts = Post.all
     @quote = Quote.first(offset: rand(Quote.count))
-
   end
 
   def about
   end
 
   def programming
-    @posts = Post.tagged_with(["programming", 'web development'], :any => true).order("created_at DESC")
+    @posts = Post.tagged_with_programming
   end
 
   def photography
-    @posts = Post.tagged_with(["photography", 'iphoneography'], :any => true)
-    @photos = Photo.all.order("created_at DESC")
+    @posts = Post.tagged_with_photography
   end
 
   def projects
   end
 
   def running
-    @posts = Post.tagged_with(["running"], :any => true).order("created_at DESC")
+    @posts = Post.tagged_with_running
   end
 
   def yoga
-    @posts = Post.tagged_with(["yoga"], :any => true).order("created_at DESC")
+    @posts = Post.tagged_with_yoga
   end
 
   def mindfulness
-    @posts = Post.tagged_with(["mindfulness"], :any => true).order("created_at DESC")
+    @posts = Post.tagged_with_mindfulness
   end
 
   def meditation
-    @posts = Post.tagged_with(["meditation"], :any => true).order("created_at DESC")
+    @posts = Post.tagged_with_meditation
   end
 
   def webdevelopment
-    @posts = Post.tagged_with(["meditation"], :any => true).order("created_at DESC")
+    @posts = Post.tagged_with_web_development
   end
 
   def contact
