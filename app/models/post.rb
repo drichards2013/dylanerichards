@@ -1,5 +1,4 @@
 class Post < ActiveRecord::Base
-
 	extend TagPostFinders
 
   acts_as_taggable
@@ -9,7 +8,4 @@ class Post < ActiveRecord::Base
   def to_param
     "#{id} #{title}".parameterize
   end
-
-
-
 end
