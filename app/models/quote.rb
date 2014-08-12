@@ -4,4 +4,8 @@ class Quote < ActiveRecord::Base
   self.per_page = 15
 
   default_scope :order => 'created_at DESC'
+
+  def self.random
+  	first(offset: rand(Quote.count))
+  end
 end

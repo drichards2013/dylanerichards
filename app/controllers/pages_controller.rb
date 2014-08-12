@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
     @posts = Post.all
-    @quote = Quote.first(offset: rand(Quote.count))
+    @quote = Quote.random
   end
 
   def about
