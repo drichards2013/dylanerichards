@@ -16,7 +16,7 @@ module TagPostFinders
 		tagged_with(["yoga"], :any => true).order("created_at DESC")
 	end
 
-	def tagged_with_mindfulness
+	def tagged_with_mindfulness 
 		tagged_with(["mindfulness"], :any => true).order("created_at DESC")
 	end
 
