@@ -1,5 +1,5 @@
 Dylanrichards::Application.routes.draw do
-  get "jquery/practice"
+  root 'pages#home'
   
   resources :quotes
 
@@ -22,28 +22,20 @@ Dylanrichards::Application.routes.draw do
   get 'pages/contact'
   get 'pages/programming'
 
-
-  get 'photography' => 'photos#index', as: 'photogallery' 
+  get 'contact' => 'pages#contact', as: 'contact'
   get 'about' => 'pages#about', as: 'about'
+
   get 'projects' => 'pages#projects', as: 'projects'
+  get 'photography' => 'photos#index', as: 'photogallery' 
+
   get 'tags/running' => 'pages#running', as: 'running'
   get 'tags/mindfulness' => 'pages#mindfulness', as: 'mindfulness'
   get 'tags/meditation' => 'pages#meditation', as: 'meditation'
   get 'tags/photography' => 'pages#photography', as: 'photography'
   get 'tags/programming' => 'pages#programming', as: 'programming'
-  get 'contact' => 'pages#contact', as: 'contact'
-
-
 
   get 'tags/:tag', to: 'posts#index', as: :tag
 
 
-
-
-  root 'pages#home'
-
-  get 'blog/march202014'
-  get 'blog/march212014'
-  get 'blog/ruleofthirds'
-
+  get "jquery/practice"
 end

@@ -6,9 +6,7 @@
 <%= link_to 'add photo', new_photo_path %>
 <% end %>
 <ul>
-  <% @posts.each do |post| %>
-  <li><%= post.created_at.to_time.strftime('%B %d %Y') %> :: <%= link_to post.title, post %></li>
-  <% end %>
+  <%= render @posts %>
 </ul>
 
 

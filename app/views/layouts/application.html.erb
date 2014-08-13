@@ -2,17 +2,21 @@
 
 <html>
   <%= render 'layouts/head' %>
+
   <body class='body'>
+
     <div class="container container-fluid">
+      <% flash.each do |name, msg| %>
+        <br>
+        <%= content_tag(:div, msg, class: "alert alert-info") %>
+      <% end %>
 
-    <% flash.each do |name, msg| %>
-      <br>
-      <%= content_tag(:div, msg, class: "alert alert-info") %>
-    <% end %>
+      <%= render 'layouts/navbar' %>
 
-    <%= render 'layouts/navbar' %>
-    <%= yield %>
+      <%= yield %>
+      
     </div> <!-- END container -->
+
   </body>
 </html>
 

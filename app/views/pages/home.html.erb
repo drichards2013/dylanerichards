@@ -7,6 +7,12 @@
 <br>
 <br>
 
+<% if current_user %>
+  <%= link_to 'new post', new_post_path %> | 
+  <%= link_to 'new photo', new_photo_path %> |
+  <%= link_to 'new quote', new_quote_path %> 
+<% end %>
+
 <div id="dylanrichards">
   <%= image_tag 'http://imgur.com/RZoIpFn.png', class: 'homephoto fadein'%>
 </div>
@@ -19,12 +25,6 @@
   <small><%= "#{@quote.author}" %></small>
   </blockquote>
 </div>
-
-<% if current_user %>
-  <%= link_to 'new post', new_post_path %> | 
-  <%= link_to 'new photo', new_photo_path %> |
-  <%= link_to 'new quote', new_quote_path %> 
-<% end %>
 
 <br>
 <% if !current_user %>

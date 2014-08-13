@@ -16,8 +16,6 @@ class PagesController < ApplicationController
     @posts = Post.tagged_with_photography
   end
 
-  def projects
-  end
 
   def running
     @posts = Post.tagged_with_running
@@ -40,5 +38,8 @@ class PagesController < ApplicationController
   end
 
   def contact
+  end
+  
+  def projects
   end
 end
