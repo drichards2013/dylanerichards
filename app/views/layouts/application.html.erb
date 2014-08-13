@@ -1,35 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>dylan e. richards</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-    <%= javascript_include_tag 'application' %>
-    <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= csrf_meta_tags %>
-    <%= favicon_link_tag 'favicon.ico' %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-
-
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-49236914-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-  </head>
+  <%= render 'layouts/head' %>
   <body class='body'>
     <div class="container container-fluid">
 
@@ -38,9 +10,7 @@
       <%= content_tag(:div, msg, class: "alert alert-info") %>
     <% end %>
 
-
     <%= render 'layouts/navbar' %>
-
     <%= yield %>
     </div> <!-- END container -->
   </body>
