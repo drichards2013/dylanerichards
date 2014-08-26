@@ -4,6 +4,14 @@ describe Post do
   it { should validate_presence_of (:title) }
   it { should validate_presence_of (:body) }
 
+  it 'lists itself if descending order' do
+    post = Post.create(title: 'bar', body: 'baz')
+    post.save
+    post2 = Post.create(title: 'learn', body: 'rspec')
+    post2.save
+    expect(Post.all).to eq [post2, post]
+  end
+
   describe '#tagged_with_programming' do
     it 'returns all posts tagged with programming' do
       post = Post.create(title: 'Foo', body: 'Bar')  
