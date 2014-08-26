@@ -46,6 +46,12 @@ GEM
     bootstrap-will_paginate (0.0.10)
       will_paginate
     builder (3.1.4)
+    capybara (2.4.1)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.3)
@@ -194,6 +200,8 @@ GEM
     warden (1.2.3)
       rack (>= 1.0)
     will_paginate (3.0.5)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
@@ -204,6 +212,7 @@ DEPENDENCIES
   bootstrap-sass
   bootstrap-will_paginate
   bootstrap-wysihtml5-rails!
+  capybara
   cocaine (~> 0.5.1)
   coffee-rails (~> 4.0.0)
   colorbox-rails

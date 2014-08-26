@@ -29,4 +29,30 @@ describe PostsController do
       expect(assigns(:post)).to eq post
     end
   end
+
+  describe '#show' do
+    it 'renders the show template' do
+      post = Post.create(title: 'Bar', body: 'Baz')
+      post.save
+      get :show, id: post
+      expect(response).to render_template :show
+    end
+
+    it 'assigns the requested post to @post' do
+      post = Post.create(title: 'Bar', body: 'Baz')
+      post.save
+      get :show, id: post
+      expect(assigns(:post)).to eq post
+    end
+  end
+  
+  describe '#create' do
+    it 'saves the new post in the database' do
+      expect{
+        post = Post.create(title: 'Bar', body: 'Baz')
+        post.save
+      }.to change(Post, :count).by(1)
+    end
+  end
+
 end
