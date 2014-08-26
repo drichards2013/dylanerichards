@@ -19,9 +19,15 @@ module Dylanrichards
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-
+    config.i18n.enforce_available_locales = true
+    
     config.assets.initialize_on_precompile = false
    
     config.autoload_paths += %W(#{config.root}/lib)
+    config.generators do |g|
+      g.test_frakework :rspec,
+        fixtures: true
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+    end
   end
 end

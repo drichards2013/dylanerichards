@@ -14,15 +14,9 @@ end
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
 end
 
-group :test do
-  gem 'faker'
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'launchy'
-  gem 'selenium-webdriver'
-end
 
 gem 'colorbox-rails'
 gem 'bootstrap-sass'
@@ -43,6 +37,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
+gem 'pry-debugger'
+
 
 group :doc do
   gem 'sdoc', require: false
