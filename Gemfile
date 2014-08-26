@@ -11,6 +11,19 @@ group :production do
   gem 'rails_12factor'
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'faker'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+end
+
 gem 'colorbox-rails'
 gem 'bootstrap-sass'
 gem 'acts-as-taggable-on'
