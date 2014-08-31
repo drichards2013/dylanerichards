@@ -18,6 +18,7 @@ group :development, :test do
   gem 'capybara'
   gem 'rb-fsevent'
   gem 'guard-rspec'
+  gem 'guard-livereload'
 end
 
 gem 'colorbox-rails'
