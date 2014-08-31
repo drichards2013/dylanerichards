@@ -1,7 +1,6 @@
 module TagPostFinders
 	def tagged_with_programming
 		tagged_with(["programming", 'web development'], :any => true)
-	
 	end
 
 	def tagged_with_photography

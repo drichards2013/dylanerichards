@@ -16,8 +16,9 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
   gem 'capybara'
+  gem 'rb-fsevent'
+  gem 'guard-rspec'
 end
-
 
 gem 'colorbox-rails'
 gem 'bootstrap-sass'
@@ -30,7 +31,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
 
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
-                              :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
+                                 :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
@@ -39,7 +40,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'pry-debugger'
-
 
 group :doc do
   gem 'sdoc', require: false
