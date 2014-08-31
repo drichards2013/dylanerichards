@@ -16,15 +16,13 @@ describe PostsController do
   
   describe '#edit' do
     it 'renders the edit template' do
-      post = Post.create(title: 'Bar', body: 'Baz')
-      post.save
+      post = FactoryGirl.create(:post)
       get :edit, id: post
       expect(response).to render_template :edit
     end
 
     it 'assigns the requested post to @post' do
-      post = Post.create(title: 'Bar', body: 'Baz')
-      post.save
+      post = FactoryGirl.create(:post) 
       get :edit, id: post
       expect(assigns(:post)).to eq post
     end
@@ -32,15 +30,13 @@ describe PostsController do
 
   describe '#show' do
     it 'renders the show template' do
-      post = Post.create(title: 'Bar', body: 'Baz')
-      post.save
+      post = FactoryGirl.create(:post) 
       get :show, id: post
       expect(response).to render_template :show
     end
 
     it 'assigns the requested post to @post' do
-      post = Post.create(title: 'Bar', body: 'Baz')
-      post.save
+      post = FactoryGirl.create(:post) 
       get :show, id: post
       expect(assigns(:post)).to eq post
     end
@@ -49,8 +45,7 @@ describe PostsController do
   describe '#create' do
     it 'saves the new post in the database' do
       expect{
-        post = Post.create(title: 'Bar', body: 'Baz')
-        post.save
+        post = FactoryGirl.create(:post) 
       }.to change(Post, :count).by(1)
     end
   end
