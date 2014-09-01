@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
 
   def home
-    @posts = Post.all
     @quote = Quote.random
   end
 
@@ -15,7 +14,6 @@ class PagesController < ApplicationController
   def photography
     @posts = Post.tagged_with_photography
   end
-
 
   def running
     @posts = Post.tagged_with_running

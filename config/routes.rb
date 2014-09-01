@@ -30,6 +30,4 @@ Dylanrichards::Application.routes.draw do
   get 'tags/programming' => 'pages#programming', as: 'programming'
 
   get 'tags/:tag', to: 'posts#index', as: :tag
-
-  get "jquery/practice"
 end
