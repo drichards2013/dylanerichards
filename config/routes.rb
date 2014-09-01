@@ -2,19 +2,14 @@ Dylanrichards::Application.routes.draw do
   root 'pages#home'
   
   resources :quotes
-
   resources :photos
+  resources :posts, :path => "blog"
 
   devise_for :users do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
-  
-
-  resources :posts, :path => "blog"
-  
   get 'blog' => 'posts#index', as: 'blog'
-
 
   get "pages/home"
   get "pages/about"
@@ -35,7 +30,6 @@ Dylanrichards::Application.routes.draw do
   get 'tags/programming' => 'pages#programming', as: 'programming'
 
   get 'tags/:tag', to: 'posts#index', as: :tag
-
 
   get "jquery/practice"
 end
