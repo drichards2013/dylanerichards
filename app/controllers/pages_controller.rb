@@ -4,9 +4,6 @@ class PagesController < ApplicationController
     @quote = Quote.random
   end
 
-  def about
-  end
-
   def programming
     @posts = Post.tagged_with_programming
   end
@@ -38,6 +35,9 @@ class PagesController < ApplicationController
   def contact
   end
   
+  def about
+  end
+
   def projects
   end
 end
