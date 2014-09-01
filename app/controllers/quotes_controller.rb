@@ -18,38 +18,33 @@ class QuotesController < ApplicationController
   def create
     @quote = Quote.new(quote_params)
 
-    respond_to do |format|
-      if @quote.save
-        format.html { redirect_to @quote, notice: 'Quote was successfully created.' }
-      else
-        format.html { render action: 'new' }
-      end
+    if @quote.save
+      redirect_to @quote, notice: 'Quote was successfully created.'
+    else
+      render :new
     end
   end
 
   def update
-    respond_to do |format|
-      if @quote.update(quote_params)
-        format.html { redirect_to @quote, notice: 'Quote was successfully updated.' }
-      else
-        format.html { render action: 'edit' }
-      end
+    if @quote.update(quote_params)
+      redirect_to @quote, notice: 'Quote was successfully updated.'
+    else
+      render :edit
     end
   end
 
   def destroy
     @quote.destroy
-    respond_to do |format|
-      format.html { redirect_to quotes_url }
-    end
+    redirect_to quotes_url
   end
 
   private
-    def set_quote
-      @quote = Quote.find(params[:id])
-    end
 
-    def quote_params
-      params.require(:quote).permit(:body, :author)
-    end
+  def set_quote
+    @quote = Quote.find(params[:id])
+  end
+
+  def quote_params
+    params.require(:quote).permit(:body, :author)
+  end
 end
