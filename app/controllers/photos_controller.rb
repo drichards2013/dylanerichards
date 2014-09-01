@@ -18,38 +18,33 @@ class PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
 
-    respond_to do |format|
-      if @photo.save
-        format.html { redirect_to photography_path, notice: 'Photo was successfully created.' }
-      else
-        format.html { render action: 'new' }
-      end
+    if @photo.save
+      redirect_to photography_path, notice: 'Photo was successfully created.' 
+    else
+      render :new
     end
   end
 
   def update
-    respond_to do |format|
-      if @photo.update(photo_params)
-        format.html { redirect_to photography_path, notice: 'Photo was successfully updated.' }
-      else
-        format.html { render action: 'edit' }
-      end
+    if @photo.update(photo_params)
+      redirect_to photography_path, notice: 'Photo was successfully updated.'
+    else
+      render :edit
     end
   end
 
   def destroy
     @photo.destroy
-    respond_to do |format|
-      format.html { redirect_to photography_path }
-    end
+    redirect_to photography_path, notice: 'Photo was successfully deleted' 
   end
 
   private
-    def set_photo
-      @photo = Photo.find(params[:id])
-    end
 
-    def photo_params
-      params.require(:photo).permit(:name, :image)
-    end
+  def set_photo
+    @photo = Photo.find(params[:id])
+  end
+
+  def photo_params
+    params.require(:photo).permit(:name, :image)
+  end
 end
