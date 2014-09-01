@@ -1,13 +1,16 @@
 <div id="post">
-	<h1 class='posttitle dylanrichards pagetitle'>
-		<i class="fa fa-comment-o fa-2x"></i>
-	</h1>
+	<h1 class='posttitle dylanrichards pagetitle'><i class="fa fa-comment-o fa-2x"></i></h1>
+  
 	<br>
+
 	<% if current_user %>
 		<%= link_to 'New Quote', new_quote_path %>
-	<% end %>
-	<br>
-	<%= render @quotes %>
+  <% end %>
+
+  <br>
+
+  <%= render @quotes %>
+
 	<%= will_paginate @quotes %>
 </div>
 <br>
