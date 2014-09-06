@@ -4,7 +4,7 @@ describe Post do
   it { should validate_presence_of (:title) }
   it { should validate_presence_of (:body) }
 
-  it 'lists itself if descending order' do
+  it 'lists itself in descending order' do
     post = Post.create(title: 'bar', body: 'baz')
     post.save
     post2 = Post.create(title: 'learn', body: 'rspec')
