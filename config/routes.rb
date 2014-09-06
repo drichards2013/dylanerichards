@@ -3,7 +3,7 @@ Dylanrichards::Application.routes.draw do
   
   resources :quotes
   resources :photos
-  resources :posts, :path => "blog"
+  resources :posts, :path => 'blog'
 
   devise_for :users do
     get '/users/sign_out' => 'devise/sessions#destroy'
@@ -11,8 +11,8 @@ Dylanrichards::Application.routes.draw do
 
   get 'blog' => 'posts#index', as: 'blog'
 
-  get "pages/home"
-  get "pages/about"
+  get 'pages/home'
+  get 'pages/about'
   get 'pages/yoga'
   get 'pages/contact'
   get 'pages/programming'
