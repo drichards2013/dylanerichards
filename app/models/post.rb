@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
   default_scope order: 'created_at DESC'
-  
-	extend TagPostFinders
+
+  extend TagPostFinders
 
   acts_as_taggable
 

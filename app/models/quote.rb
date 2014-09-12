@@ -1,6 +1,6 @@
 class Quote < ActiveRecord::Base
-	extend QuoteFinders
-	
+  extend QuoteFinders
+
   validates :body, uniqueness: true
 
   default_scope order: 'created_at DESC'
