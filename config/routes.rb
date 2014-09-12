@@ -1,6 +1,6 @@
 Dylanrichards::Application.routes.draw do
   root 'pages#home'
-  
+
   resources :quotes
   resources :photos
   resources :posts, :path => 'blog'
@@ -21,7 +21,7 @@ Dylanrichards::Application.routes.draw do
   get 'about' => 'pages#about', as: 'about'
 
   get 'projects' => 'pages#projects', as: 'projects'
-  get 'photography' => 'photos#index', as: 'photogallery' 
+  get 'photography' => 'photos#index', as: 'photogallery'
 
   get 'tags/running' => 'pages#running', as: 'running'
   get 'tags/mindfulness' => 'pages#mindfulness', as: 'mindfulness'
