@@ -27,7 +27,4 @@ module TagPostFinders
     tagged_with(["web development"], any: true)
   end
 
-  def tagged_with_web_development
-    tagged_with(['web development'], any: true)
-  end
 end
