@@ -44,4 +44,3 @@ gem 'jbuilder', '~> 1.2'
 gem 'pry-debugger'
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
                                  :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
-
