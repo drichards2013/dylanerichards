@@ -19,7 +19,7 @@ class PhotosController < ApplicationController
     @photo = Photo.new(photo_params)
 
     if @photo.save
-      redirect_to photography_path, notice: 'Photo was successfully created.' 
+      redirect_to photography_path, notice: 'Photo was successfully created.'
     else
       render :new
     end
@@ -35,7 +35,7 @@ class PhotosController < ApplicationController
 
   def destroy
     @photo.destroy
-    redirect_to photography_path, notice: 'Photo was successfully deleted' 
+    redirect_to photography_path, notice: 'Photo was successfully deleted'
   end
 
   private
