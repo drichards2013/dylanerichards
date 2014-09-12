@@ -3,15 +3,9 @@
 
 <h4>posts</h4>
 <% if current_user %>
-<%= link_to 'add photo', new_photo_path %>
+  <%= link_to 'add photo', new_photo_path %>
 <% end %>
+
 <ul>
   <%= render @posts %>
 </ul>
-
-
-
-
-
-
-
