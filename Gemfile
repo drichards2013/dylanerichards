@@ -21,6 +21,10 @@ group :development, :test do
   gem 'guard-livereload'
 end
 
+group :test do
+  gem 'simplecov', require: false
+end
+
 group :doc do
   gem 'sdoc', require: false
 end
