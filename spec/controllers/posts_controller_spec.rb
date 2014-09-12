@@ -50,4 +50,13 @@ describe PostsController do
     end
   end
 
+  describe 'destroy' do
+    it 'destroys a post' do
+      post = FactoryGirl.create(:post)
+      expect {
+        post.destroy
+      }.to change(Post, :count).by(-1)
+    end
+  end
+
 end
