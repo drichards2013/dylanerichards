@@ -56,6 +56,16 @@ describe Post do
     end
   end
 
+  describe '#tagged_with_meditation' do
+    it 'returns all posts tagged with meditation' do
+      post = Post.create(title: 'Foo', body: 'Bar')
+      post.tag_list << 'meditation'
+      post.save
+
+      expect(Post.tagged_with_meditation.to_a).to match_array [post]
+    end
+  end
+
   describe '#tagged_with_mindfulness' do
     it 'returns all posts tagged with mindfulness' do
       post = Post.create(title: 'Foo', body: 'Bar')
