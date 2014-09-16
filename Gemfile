@@ -31,7 +31,7 @@ end
 
 gem 'colorbox-rails'
 gem 'bootstrap-sass'
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', ' ~> 3.0.2'
 gem 'devise'
 gem 'paperclip', '~> 3.4.1'
 gem 'cocaine', '~> 0.5.1'

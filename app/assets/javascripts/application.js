@@ -13,8 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require colorbox-rails
+//= require bootstrap-wysihtml5
 //= require bootstrap
-//= require bootstrap-wysihtml5/b3
 //= require_tree .
 
 
