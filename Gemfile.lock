@@ -46,6 +46,10 @@ GEM
     bootstrap-will_paginate (0.0.10)
       will_paginate
     builder (3.1.4)
+    byebug (3.4.0)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
     capybara (2.4.1)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -70,12 +74,8 @@ GEM
       jquery-rails
       rails (>= 3.1.1)
     columnize (0.8.9)
-    debugger (1.6.8)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.3.5)
+    database_cleaner (1.3.0)
     debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.3.5)
     devise (3.2.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -146,9 +146,6 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry-debugger (0.2.3)
-      debugger (~> 1.3)
-      pry (>= 0.9.10, < 0.11.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -253,10 +250,12 @@ DEPENDENCIES
   bootstrap-sass
   bootstrap-will_paginate
   bootstrap-wysihtml5-rails!
+  byebug
   capybara
   cocaine (~> 0.5.1)
   coffee-rails (~> 4.0.0)
   colorbox-rails
+  database_cleaner
   devise
   factory_girl_rails
   guard-livereload
@@ -265,7 +264,6 @@ DEPENDENCIES
   jquery-rails
   paperclip (~> 3.4.1)
   pg
-  pry-debugger
   rails (= 4.0.2)
   rails_12factor
   rb-fsevent

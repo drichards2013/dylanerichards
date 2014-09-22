@@ -1,0 +1,9 @@
+<div id='post'>
+  <% if current_user %>
+    <%= link_to 'Edit', edit_reading_list_path(@reading_list) %>
+  <% end %>
+
+  <h1 class='posttitle dylanrichards'>reading list</h1>
+
+  <%= simple_format @reading_list.books %>
+</div>

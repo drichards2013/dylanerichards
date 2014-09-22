@@ -19,6 +19,7 @@ group :development, :test do
   gem 'rb-fsevent'
   gem 'guard-rspec'
   gem 'guard-livereload'
+  gem 'database_cleaner'
 end
 
 group :test do
@@ -45,6 +46,6 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'pry-debugger'
+gem 'byebug'
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails',
                                  :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
