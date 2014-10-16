@@ -3,9 +3,9 @@ class PostsController < ApplicationController
 
   def index
     if params[:tag]
-      @posts = Post.tagged_with(params[:tag]).paginate(page: params[:page])
+      @posts = Post.paginated_with_tags
     else
-      @posts = Post.all.paginate(page: params[:page])
+      @posts = Post.paginated
     end
   end
 

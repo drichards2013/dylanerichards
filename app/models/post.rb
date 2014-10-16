@@ -9,6 +9,14 @@ class Post < ActiveRecord::Base
 
   self.per_page = 15
 
+  def paginated
+    all.paginate(page: params[:page])   
+  end
+
+  def paginated_with_tags
+    tagged_with(params[:tag]).paginate(page: params[:page])
+  end
+
   def to_param
     "#{id} #{title}".parameterize
   end
