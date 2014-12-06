@@ -6,8 +6,8 @@ Dylanrichards::Application.routes.draw do
   resources :posts, :path => 'blog'
   resources :reading_lists, only: [:new, :create, :edit, :update, :show]
 
-  get '/reading_list' => 'reading_lists#show', id: 1, as: 'main_reading_list'
-  get '/reading_list/edit' => 'reading_lists#edit', id: 1
+  get '/reading-list' => 'reading_lists#show', id: 1, as: 'main_reading_list'
+  get '/reading-list/edit' => 'reading_lists#edit', id: 1
 
   devise_for :users do
     get '/users/sign_out' => 'devise/sessions#destroy'
