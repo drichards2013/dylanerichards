@@ -157,6 +157,11 @@ li .contacticon {
   color: #16a085;
 }
 
+ul.wysihtml5-toolbar {
+  position: relative;
+  right: 50px;
+}
+
 a:link {color:#16a085;}      /* unvisited link  */
 a:visited {color:#777;}      /* visited link    */
 a:hover {color:#1abc9c;}     /* mouse over link */
