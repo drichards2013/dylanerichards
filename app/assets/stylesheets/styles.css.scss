@@ -1,107 +1,107 @@
 .body {
-	background-color: #fffff9 ;
-	-webkit-font-smoothing: antialiased;
+  background-color: #fffff9 ;
+  -webkit-font-smoothing: antialiased;
 }
 
 .leftquote {
-	font-size: 150%;
+  font-size: 150%;
 }
 
 nav {	margin-top: 10px;}
 
 .tags {
-	text-align: center;
+  text-align: center;
 }
 
 .homephoto {
-	width: 14em;
+  width: 14em;
 }
 
 .postdate {
-	text-align: center;
+  text-align: center;
 }
 
 .photoshow {
-	text-align: center;
+  text-align: center;
 
 }
 
 .wysihtml5-toolbar {
-	margin-left: 269px !important;
+  margin-left: 269px !important;
 }
 
 .container {
-	font-family: "Droid Serif", "serif";	
+  font-family: "Droid Serif", "serif";	
 }
 
 .dylanrichards {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
 .highlight {
- 	color: #16a085;
+  color: #16a085;
  }
 
  .admin-button {
- 	clear: both;
+   clear: both;
  }
 
-.underline {
-	color: #333;
-	border-bottom: 1px solid #f39c12;
-	border-width: 2px;
-	padding-bottom: 3px;
+ .underline {
+   color: #333;
+   border-bottom: 1px solid #f39c12;
+   border-width: 2px;
+   padding-bottom: 3px;
 
 }
 
 #post {
-	margin: 0 auto;
- 	max-width: 42.5em;
+  margin: 0 auto;
+  max-width: 42.5em;
  }
 
  #photos {
- 	text-align: center;
- 	font-size: 0; //	images right against each other
+   text-align: center;
+   font-size: 0; //	images right against each other
  }
 
  #photos img {
- 	margin: 0;
- 	text-align: center;
+   margin: 0;
+   text-align: center;
  }
 
  .posttitle {
- 	text-align: center;
- 	color: #333;
- 	margin-top: 30px;
+   text-align: center;
+   color: #333;
+   margin-top: 30px;
  }
 
-.span {
-	background-color: #F3B562;
-	height: 1px;
-	width: 100%;
-	margin-bottom: 20px;
+ .span {
+   background-color: #F3B562;
+   height: 1px;
+   width: 100%;
+   margin-bottom: 20px;
 }
 
- .postdate {
- 	text-align: center;
- 	color: #999;
+.postdate {
+  text-align: center;
+  color: #999;
  }
 
  .navbar {
-  background-color: transparent;
-  background: transparent;
+   background-color: transparent;
+   background: transparent;
  }
 
  .navbar-nav li a:visited {
- 	color: #777 !important;
+   color: #777 !important;
  }
 
-#dylanrichards {
-	text-align: center;
+ #dylanrichards {
+   text-align: center;
 }
 
 .dropdown-menu>li>a:hover {
-	background-color: #fff !important;
+  background-color: #fff !important;
 }
 
 .navbar {
@@ -110,52 +110,52 @@ nav {	margin-top: 10px;}
 }
 
 .navbar-nav li a {
-	color:#16a085 !important;
+  color:#16a085 !important;
 }
 
 .navbar-nav li a:hover {
-	color:#1abc9c !important;
+  color:#1abc9c !important;
 }
 
 .navbar-nav li a:active {
-	color:#0000ff;
+  color:#0000ff;
 }
 
 #homequote {
-	border-left: none;
+  border-left: none;
 }
 
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 .navbar-default .navbar-brand {
-	color: #16a085 !important;
+  color: #16a085 !important;
 }
 
 .blockquoteindex {
-	border-left: none !important;
+  border-left: none !important;
 }
 
 li .contacticon {
-	list-style: none;
+  list-style: none;
 }
 
 .contacticons {
-	list-style: none;
-	text-align: center;
-	padding-right: 42px;
+  list-style: none;
+  text-align: center;
+  padding-right: 42px;
 }
 
 .pagination > .active > a  {
-	background-color: #16a085 !important; 
+  background-color: #16a085 !important; 
 }
 
 .pagination > li > a {
-	color: #16a085;
+  color: #16a085;
 }
 
- a:link {color:#16a085;}      /* unvisited link */
- a:visited {color:#777;}   /* visited link */
- a:hover {color:#1abc9c;}     /* mouse over link */
- a:active {color:#0000FF;}    /* selected link */
+a:link {color:#16a085;}      /* unvisited link */
+a:visited {color:#777;}   /* visited link */
+a:hover {color:#1abc9c;}     /* mouse over link */
+a:active {color:#0000FF;}    /* selected link */
