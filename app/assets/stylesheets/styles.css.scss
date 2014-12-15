@@ -7,7 +7,9 @@
   font-size: 150%;
 }
 
-nav {	margin-top: 10px;}
+nav {
+  margin-top: 10px;
+}
 
 .tags {
   text-align: center;
@@ -31,7 +33,7 @@ nav {	margin-top: 10px;}
 }
 
 .container {
-  font-family: "Droid Serif", "serif";	
+  font-family: "Droid Serif", "serif";
 }
 
 .dylanrichards {
@@ -61,7 +63,7 @@ nav {	margin-top: 10px;}
 
  #photos {
    text-align: center;
-   font-size: 0; //	images right against each other
+   font-size: 0; //images right against each other
  }
 
  #photos img {
@@ -147,15 +149,15 @@ li .contacticon {
   padding-right: 42px;
 }
 
-.pagination > .active > a  {
-  background-color: #16a085 !important; 
+.pagination > .active > a {
+  background-color: #16a085 !important;
 }
 
 .pagination > li > a {
   color: #16a085;
 }
 
-a:link {color:#16a085;}      /* unvisited link */
-a:visited {color:#777;}   /* visited link */
+a:link {color:#16a085;}      /* unvisited link  */
+a:visited {color:#777;}      /* visited link    */
 a:hover {color:#1abc9c;}     /* mouse over link */
-a:active {color:#0000FF;}    /* selected link */
+a:active {color:#0000FF;}    /* selected link   */
