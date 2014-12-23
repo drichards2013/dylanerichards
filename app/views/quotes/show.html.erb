@@ -12,5 +12,6 @@
 
 <% if current_user %>
 <%= link_to 'Edit', edit_quote_path(@quote) %> |
+<%= link_to 'New Quote', new_quote_path %> |
 <%= link_to 'Back', quotes_path %>
 <% end %>
