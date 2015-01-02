@@ -7,4 +7,3 @@ class Quote < ActiveRecord::Base
 
   self.per_page = 15
 end
-
