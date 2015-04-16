@@ -10,6 +10,6 @@ class Post < ActiveRecord::Base
   self.per_page = 15
 
   def to_param
-    "#{id} #{title}".parameterize
+    Parameterizer.parameterize(self)
   end
 end
