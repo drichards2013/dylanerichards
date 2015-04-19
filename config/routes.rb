@@ -15,12 +15,6 @@ Dylanrichards::Application.routes.draw do
 
   get 'blog' => 'posts#index', as: 'blog'
 
-  get 'pages/home'
-  get 'pages/about'
-  get 'pages/yoga'
-  get 'pages/contact'
-  get 'pages/programming'
-
   get 'contact' => 'pages#contact', as: 'contact'
   get 'about' => 'pages#about', as: 'about'
 
