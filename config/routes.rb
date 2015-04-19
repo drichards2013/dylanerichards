@@ -21,11 +21,9 @@ Dylanrichards::Application.routes.draw do
   get 'projects' => 'pages#projects', as: 'projects'
   get 'photography' => 'photos#index', as: 'photogallery'
 
-  get 'tags/running' => 'pages#running', as: 'running'
-  get 'tags/mindfulness' => 'pages#mindfulness', as: 'mindfulness'
-  get 'tags/meditation' => 'pages#meditation', as: 'meditation'
-  get 'tags/photography' => 'pages#photography', as: 'photography'
-  get 'tags/programming' => 'pages#programming', as: 'programming'
+  %w(running mindfulness meditation photography programming contact about).each do |tag|
+    get "tags/#{tag}" => "pages##{tag}", as: "#{tag}"
+  end
 
   get 'tags/:tag', to: 'posts#index', as: :tag
 end
