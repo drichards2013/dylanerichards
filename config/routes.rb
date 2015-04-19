@@ -15,11 +15,12 @@ Dylanrichards::Application.routes.draw do
 
   get 'blog' => 'posts#index', as: 'blog'
 
-  get 'contact' => 'pages#contact', as: 'contact'
-  get 'about' => 'pages#about', as: 'about'
-
   get 'projects' => 'pages#projects', as: 'projects'
   get 'photography' => 'photos#index', as: 'photogallery'
+
+  %w(contact about).each do |page|
+    get "#{page}" => "pages##{page}", as: "#{page}"
+  end
 
   %w(running mindfulness meditation photography programming contact about).each do |tag|
     get "tags/#{tag}" => "pages##{tag}", as: "#{tag}"
