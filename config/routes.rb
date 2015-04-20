@@ -1,8 +1,7 @@
 Dylanrichards::Application.routes.draw do
   root 'pages#home'
 
-  resources :quotes
-  resources :photos
+  resources :quotes, :photos
   resources :posts, :path => 'blog'
   resources :reading_lists, only: [:new, :create, :edit, :update, :show]
 
