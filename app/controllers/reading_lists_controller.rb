@@ -33,7 +33,7 @@ class ReadingListsController < ApplicationController
   private
 
   def discern_reading_list
-    ReadingList.find(params[:id]).kind_of?(ReadingList) ?
+    params[:id] ?
       @reading_list = ReadingList.find(params[:id]) :
       @reading_list = ReadingList.first
   end
