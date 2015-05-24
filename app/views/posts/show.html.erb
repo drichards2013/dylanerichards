@@ -12,6 +12,8 @@
   <%= @post.created_at.to_time.strftime('%B %d %Y') %> <br>
   <small><i><%= @post.tag_list.sort_by!{ |tag| tag.downcase } %></i></small>
 </div>
+
+
 <div id="post">
 <br>
 <br>

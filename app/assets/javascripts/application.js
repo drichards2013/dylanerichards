@@ -42,6 +42,10 @@ $(document).ready(function() {
   }, 250);
 
   setTimeout(function() {
+    $(".postdate").css("visibility", "visible").addClass("animated fadeIn")
+  }, 250);
+
+  setTimeout(function() {
     $("#post").css("visibility", "visible").addClass("animated fadeIn")
   }, 400);
 
