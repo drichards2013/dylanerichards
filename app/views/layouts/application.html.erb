@@ -2,7 +2,7 @@
 <html>
   <%= render 'layouts/head' %>
 
-  <body class="body <%= "home-background-image" if current_page?(controller: "pages", action: "home") %>
+  <body class="body <%= "home-background-image" if params[:action] == "home" %>
 
     <div class="container container-fluid">
       <% flash.each do |name, msg| %>
