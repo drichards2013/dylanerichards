@@ -71,6 +71,7 @@ nav {
   position: relative;
   bottom: 100px;
   z-index: -1;
+  visibility: hidden;
 }
 
 .highlight {
@@ -169,6 +170,7 @@ nav {
   position: relative;
   bottom: 90px;
   color: #fff;
+  visibility: hidden;
 }
 
 .center {

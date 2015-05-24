@@ -23,7 +23,17 @@ $(document).ready(function() {
     $(elem).wysihtml5();
   });
 
-  $('.fadein').addClass('animated fadeInDown');
+  $("body").addClass("animated fadeIn");
+
+  setTimeout(function() {
+    $(".dylanrichards-main").css("visibility", "visible").addClass("animated fadeIn")
+  }, 750);
+
+  setTimeout(function() {
+    $("#homequote").css("visibility", "visible").addClass("animated fadeIn")
+  }, 900);
+
+
   $('.pagetitle').addClass('animated bounceInDown');
 })
 
