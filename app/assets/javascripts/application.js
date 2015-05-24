@@ -44,4 +44,8 @@ $(document).ready(function() {
   setTimeout(function() {
     $("#post").css("visibility", "visible").addClass("animated fadeIn")
   }, 400);
+
+  setTimeout(function() {
+    $("#photos").css("visibility", "visible").addClass("animated fadeIn")
+  }, 400);
 });

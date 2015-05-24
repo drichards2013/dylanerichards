@@ -99,6 +99,7 @@ nav {
 #photos {
   text-align: center;
   font-size: 0; //images right against each other
+  visibility: hidden;
 }
 
 #photos img {
@@ -227,6 +228,10 @@ li .contacticon {
 ul.wysihtml5-toolbar {
   position: relative;
   right: 50px;
+}
+
+.camera {
+  visibility: hidden;
 }
 
 a:link {color:#16a085;}      /* unvisited link  */
