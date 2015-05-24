@@ -1,6 +1,9 @@
 .body {
-  background-color: #ffffff ;
+  // background-color: #ffffff ;
   -webkit-font-smoothing: antialiased;
+}
+
+.layer {
 }
 
 .home-background-image:after {
@@ -67,6 +70,7 @@ nav {
   font-size: 200px;
   position: relative;
   bottom: 100px;
+  z-index: -1;
 }
 
 .highlight {
@@ -124,7 +128,7 @@ nav {
 }
 
 .navbar-nav li a:visited {
-  color: #ffffff !important;
+  color: #999 !important;
 }
 
 .dropdown-menu {
