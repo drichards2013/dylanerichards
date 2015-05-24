@@ -127,12 +127,20 @@ nav {
   color: #ffffff !important;
 }
 
+.dropdown-menu {
+  background: none;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background: none;
+}
+
 #dylanrichards {
   text-align: center;
 }
 
 .dropdown-menu>li>a:hover {
-  background-color: #fff !important;
+  background: none;
 }
 
 .navbar {
