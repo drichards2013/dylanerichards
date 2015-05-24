@@ -25,6 +25,10 @@ $(document).ready(function() {
 
   $("body").addClass("animated fadeIn");
 
+  $("a").click(function() {
+  $("body").addClass("animated fadeOut");
+  })
+
   setTimeout(function() {
     $(".dylanrichards-main").css("visibility", "visible").addClass("animated fadeIn")
   }, 750);
