@@ -2,7 +2,7 @@
 <html>
   <%= render 'layouts/head' %>
 
-  <body class='body'>
+  <body class="body <%= "home-background-image" if current_page?(controller: "pages", action: "home") %>
 
     <div class="container container-fluid">
       <% flash.each do |name, msg| %>
