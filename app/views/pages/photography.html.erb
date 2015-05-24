@@ -1,11 +1,13 @@
-<h1>photography</h1>
+<h1 class="posttitle">photography</h1>
 <br>
 
-<h4>posts</h4>
-<% if current_user %>
-  <%= link_to 'add photo', new_photo_path %>
-<% end %>
+<div id="post">
+  <h4>posts</h4>
+  <% if current_user %>
+    <%= link_to 'add photo', new_photo_path %>
+  <% end %>
 
-<ul>
-  <%= render @posts %>
-</ul>
+  <ul>
+    <%= render @posts %>
+  </ul>
+</div>

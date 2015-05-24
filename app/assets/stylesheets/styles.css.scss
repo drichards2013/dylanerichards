@@ -93,6 +93,7 @@ nav {
 #post {
   margin: 0 auto;
   max-width: 42.5em;
+  visibility: hidden;
 }
 
 #photos {
@@ -217,6 +218,10 @@ li .contacticon {
 
 .pagination > li > a {
   color: #16a085;
+}
+
+.pagetitle {
+  visibility: hidden;
 }
 
 ul.wysihtml5-toolbar {

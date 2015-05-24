@@ -37,8 +37,11 @@ $(document).ready(function() {
     $("#homequote").css("visibility", "visible").addClass("animated fadeIn")
   }, 900);
 
+  setTimeout(function() {
+    $(".pagetitle").css("visibility", "visible").addClass("animated fadeIn")
+  }, 250);
 
-  $('.pagetitle').addClass('animated bounceInDown');
-})
-
-
+  setTimeout(function() {
+    $("#post").css("visibility", "visible").addClass("animated fadeIn")
+  }, 400);
+});
