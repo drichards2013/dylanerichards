@@ -12,4 +12,8 @@ class Post < ActiveRecord::Base
   def to_param
     Parameterizer.parameterize(self)
   end
+
+  def pretty_created_at
+    created_at.to_time.strftime('%B %d %Y')
+  end
 end

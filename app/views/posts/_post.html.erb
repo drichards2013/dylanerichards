@@ -1,4 +1,4 @@
-<li><%= post.created_at.to_time.strftime('%B %d %Y') %> :: 
+<li><%= post.pretty_created_at %> ::
   <%= link_to post.title, post %>
 
   <% if current_user %>::
