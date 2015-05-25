@@ -283,5 +283,5 @@ a:active  { color: #0000FF; }    /* selected link   */
 }
 
 .dropdown-backdrop {
-  position: static;
+  position: static !important;
 }
