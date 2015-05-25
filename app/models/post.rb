@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
 
   validates_presence_of :title, :body
 
-  self.per_page = 15
+  self.per_page = 5
 
   def to_param
     Parameterizer.parameterize(self)

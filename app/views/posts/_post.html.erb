@@ -1,9 +1,20 @@
-<li><%= post.pretty_created_at %> ::
-  <%= link_to post.title, post %>
+<li class="post-group">
+<span class="post-date"><%= post.pretty_created_at %></span>
 
-  <% if current_user %>::
+
+<h1><%= link_to post.title, post %></h1>
+  <% if current_user %>
     <%= link_to 'Edit', edit_post_path(post) %>
     <%= link_to 'Destroy', post, method: :delete, 
       data: { confirm: 'Are you sure?' } %>
   <% end %>
+  <div class="index-tag-list">
+    <small><i><%= post.tag_list.sort_by!{ |tag| tag.downcase } %></i></small>
+  </div>
+
+<p class="post-preview">
+<%= sanitize(raw(post.body[0,60])) + "..." %>
+
+</p>
+
 </li>
