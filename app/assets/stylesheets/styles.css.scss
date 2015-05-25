@@ -238,13 +238,13 @@ ul.wysihtml5-toolbar {
   visibility: hidden;
 }
 
-a:link {color:#16a085;}      /* unvisited link  */
-a:visited {color:#777;}      /* visited link    */
-a:hover {color:#1abc9c;}     /* mouse over link */
-a:active {color:#0000FF;}    /* selected link   */
+a:link    { color: #16a085; }      /* unvisited link  */
+a:visited { color: #777;    }      /* visited link    */
+a:hover   { color: #1abc9c; }     /* mouse over link */
+a:active  { color: #0000FF; }    /* selected link   */
 
 ::selection {
-    background: #1abc9c;
+    background: #e0ffe0;
 }
 
 ::-moz-selection {
