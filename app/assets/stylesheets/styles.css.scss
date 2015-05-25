@@ -268,9 +268,11 @@ a:hover   { color: #1abc9c; }     /* mouse over link */
 a:active  { color: #0000FF; }    /* selected link   */
 
 ::selection {
-    background: #e0ffe0;
+  background: #281e45;
+  color: #fff;
 }
 
 ::-moz-selection {
-    background: #1abc9c;
+  background: #281e45;
+  color: #fff;
 }
