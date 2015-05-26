@@ -4,8 +4,6 @@
 }
 
 .index-posts-list {
-  position: relative;
-  bottom: 100px;
   list-style: none;
 }
 
@@ -271,9 +269,10 @@ ul.wysihtml5-toolbar {
 .css4 { font-size: 1.6em;  }
 
 .tag-cloud {
-  max-width: 100px;
+  max-width: 400px;
   position: relative;
-  top: 75px;
+  left: 350px;
+  text-align: center;
 }
 
 a:link    { color: #16a085; }      /* unvisited link  */
