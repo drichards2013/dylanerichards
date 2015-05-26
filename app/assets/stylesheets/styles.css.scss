@@ -4,11 +4,9 @@
 }
 
 .index-posts-list {
+  position: relative;
+  bottom: 100px;
   list-style: none;
-}
-
-
-.layer {
 }
 
 .home-background-image:after {
@@ -265,6 +263,17 @@ ul.wysihtml5-toolbar {
 .admin-group {
   position: relative;
   bottom: 10px;
+}
+
+.css1 { font-size: 1.0em;  }
+.css2 { font-size: 1.2em;  }
+.css3 { font-size: 1.4em;  }
+.css4 { font-size: 1.6em;  }
+
+.tag-cloud {
+  max-width: 100px;
+  position: relative;
+  top: 75px;
 }
 
 a:link    { color: #16a085; }      /* unvisited link  */

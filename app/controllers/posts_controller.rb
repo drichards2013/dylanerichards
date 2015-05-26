@@ -6,6 +6,7 @@ class PostsController < ApplicationController
       @posts = Post.tagged_with(params[:tag]).paginate(page: params[:page])
     else
       @posts = Post.all.paginate(page: params[:page])
+      @tags = Post.tag_counts_on(:tags)
     end
   end
 
