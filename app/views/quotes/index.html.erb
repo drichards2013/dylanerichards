@@ -11,6 +11,8 @@
 
   <br>
 
+  <%= pie_chart Quote.group(:author).count %>
+
   <%= render @quotes %>
 
 	<%= will_paginate @quotes %>
