@@ -11,7 +11,7 @@
 
   <br>
 
-  <%= pie_chart Quote.group(:author).count, height: '50px' %>
+  <%= pie_chart Quote.all.unscoped.group("author").count %>
 
   <%= render @quotes %>
 
