@@ -2,20 +2,18 @@
   <h1 class='posttitle dylanrichards pagetitle'>
     <i class="fa fa-comment-o fa-2x"></i>
   </h1>
-  
-	<br>
 
-	<% if current_user %>
-		<%= link_to 'New Quote', new_quote_path %>
+  <br>
+
+  <% if current_user %>
+    <%= link_to 'New Quote', new_quote_path %>
   <% end %>
 
   <br>
 
-  <%= pie_chart Quote.group(:author).count %>
+  <%= render @quotes %>
 
-  <%# <%= render @quotes %1> %>
-
-	<%# <%= will_paginate @quotes %1> %>
+  <%= will_paginate @quotes %>
 </div>
 <br>
 
