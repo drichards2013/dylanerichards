@@ -1,3 +1,5 @@
+<%= column_chart Quote.all.unscoped.group("author").count.sort %>
+
 <ol>
   <% @frequencies.each do |word, frequency| %>
     <li><%= word %> <span><b><%= frequency %></b></span></li>
