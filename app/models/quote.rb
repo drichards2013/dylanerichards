@@ -8,7 +8,7 @@ class Quote < ActiveRecord::Base
   self.per_page = 15
 
   def word_frequency
-    words = self.body.split.gsub(/[^A-Za-z0-9\s]/i, '')
+    words = self.body.gsub(/[^A-Za-z0-9\s]/i, '').split(' ')
     frequency = Hash.new(0)
     words.each { |word| frequency[word.downcase] += 1  }
     frequency
