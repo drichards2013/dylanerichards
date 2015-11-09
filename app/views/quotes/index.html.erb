@@ -12,7 +12,7 @@
 
   <br>
 
-  <%= pie_chart Quote.all.unscoped.group("author").count %>
+  <%= column_chart Quote.group("author").count %>
 
   <%= render @quotes %>
 
