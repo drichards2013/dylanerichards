@@ -15,6 +15,7 @@ class Quote < ActiveRecord::Base
   end
 
   def self.total_word_frequency
-    @frequencies = Quote.all.map(&:word_frequency).inject(:merge)
+    frequencies = Quote.all.map(&:word_frequency)
+    frequencies.inject { |memo, el| memo.merge(el){ |k, old_v, new_v| old_v + new_v } }
   end
 end
