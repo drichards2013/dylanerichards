@@ -1,6 +1,8 @@
 Dylanrichards::Application.routes.draw do
   root 'pages#home'
 
+  get '/quotes/stats', to: 'quotes#stats', as: 'quotes_stats'
+
   resources :quotes, :photos
   resources :posts, path: 'blog'
   resources :reading_lists, only: [:new, :create, :edit, :update, :show]
@@ -13,7 +15,6 @@ Dylanrichards::Application.routes.draw do
   get 'projects' => 'pages#projects', as: 'projects'
   get 'photography' => 'photos#index', as: 'photogallery'
 
-  get 'quotes-stats', to: 'quotes#stats'
 
   get 'tags/:tag', to: 'posts#index', as: :tag
 

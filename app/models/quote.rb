@@ -16,6 +16,6 @@ class Quote < ActiveRecord::Base
 
   def self.total_word_frequency
     frequencies = Quote.all.map(&:word_frequency)
-    frequencies.inject { |memo, el| memo.merge(el){ |k, old_v, new_v| old_v + new_v } }.sort_by{ |k, v| v }.reverse
+    frequencies.inject { |memo, el| memo.merge(el) { |k, old_v, new_v| old_v + new_v } }.sort_by{ |k, v| v }.reverse
   end
 end

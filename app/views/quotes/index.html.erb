@@ -6,7 +6,8 @@
   <br>
 
   <% if current_user %>
-    <%= link_to 'New Quote', new_quote_path %>
+    <%= link_to 'New Quote', new_quote_path %> |
+    <%= link_to 'Stats', quotes_stats_path %>
   <% end %>
 
   <br>
