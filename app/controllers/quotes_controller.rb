@@ -38,6 +38,10 @@ class QuotesController < ApplicationController
     redirect_to quotes_url, notice: 'Quote was successfully deleted.'
   end
 
+  def stats
+    @stats = Quote.words_with_frequency
+  end
+
   private
 
   def set_quote

@@ -13,6 +13,8 @@ Dylanrichards::Application.routes.draw do
   get 'projects' => 'pages#projects', as: 'projects'
   get 'photography' => 'photos#index', as: 'photogallery'
 
+  get 'quotes-stats', to: 'quotes#stats'
+
   get 'tags/:tag', to: 'posts#index', as: :tag
 
   %w(contact about).each do |page|
