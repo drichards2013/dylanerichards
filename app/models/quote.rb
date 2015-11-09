@@ -8,12 +8,13 @@ class Quote < ActiveRecord::Base
   self.per_page = 15
 
   def self.words_with_frequency
+    frequency = Hash.new(0)
     Quote.all.each do |quote|
       body = quote.body.split(' ')
 
-      frequency = Hash.new(0)
       body.each { |word| frequency[word.downcase] += 1  }
-      return frequency
     end
+
+    frequency
   end
 end
