@@ -10,7 +10,7 @@
 
 <div class="postdate">
   <%= @post.pretty_created_at %> <br>
-  <small><i><%= @post.tag_list.sort_by!{ |tag| tag.downcase } %></i></small>
+  <small><i><%= @post.tag_list.sort_by!(&:downcase) %></i></small>
 </div>
 
 
