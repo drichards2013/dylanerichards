@@ -7,14 +7,14 @@ class Quote < ActiveRecord::Base
 
   self.per_page = 15
 
-  def self.words_with_frequency
+  def word_frequency
+    words = self.body.split(' ')
     frequency = Hash.new(0)
-    Quote.all.each do |quote|
-      body = quote.body.split(' ')
-
-      body.each { |word| frequency[word.downcase] += 1  }
-    end
-
+    words.each { |word| frequency[word.downcase] += 1  }
     frequency
+  end
+
+  def self.total_word_frequency
+    @frequencies = Quote.all.map(&:word_frequency).inject(:merge)
   end
 end

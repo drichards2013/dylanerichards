@@ -39,7 +39,7 @@ class QuotesController < ApplicationController
   end
 
   def stats
-    @stats = Quote.words_with_frequency
+    @frequencies = Quote.words_with_frequency
   end
 
   private
