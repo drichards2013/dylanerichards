@@ -1,7 +1,7 @@
 <% if current_user %>
   <%= form_for @reading_list do |f| %>
     <%= f.label :books %>
-    <%= f.text_area :books,  class: 'wysihtml5', :size => "80x20" %> <br />
+    <%= f.text_area :books,  class: 'wysihtml5', :size => "80x20", autofocus: true %> <br />
     <%= f.submit nil, class: "btn btn-default" %>
   <% end %>
 <% end %>
