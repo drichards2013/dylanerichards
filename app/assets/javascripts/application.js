@@ -48,8 +48,4 @@ $(document).ready(function() {
   setTimeout(function() {
     $("#photos").css("visibility", "visible").addClass("animated fadeIn")
   }, 400);
-
-  $('#photos').masonry({
-    itemSelector: '.photo',
-  });
 });
