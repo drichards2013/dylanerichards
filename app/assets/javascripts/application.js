@@ -49,7 +49,7 @@ $(document).ready(function() {
     $("#photos").css("visibility", "visible").addClass("animated fadeIn")
   }, 400);
 
-  $('.photos').masonry({
+  $('#photos').masonry({
     itemSelector: '.photo',
   });
 });
