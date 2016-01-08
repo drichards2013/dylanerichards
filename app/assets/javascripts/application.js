@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap-wysihtml5
 //= require bootstrap
+//= require lightbox
 //= require_tree .
 
 
