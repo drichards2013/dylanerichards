@@ -15,6 +15,8 @@ Dylanrichards::Application.routes.draw do
   get 'projects' => 'pages#projects', as: 'projects'
   get 'photography' => 'photos#index', as: 'photogallery'
 
+  get '/manage-photos' => 'photos#manage', as: 'manage_photos'
+
 
   get 'tags/:tag', to: 'posts#index', as: :tag
 

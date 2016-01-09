@@ -1,0 +1,11 @@
+<% @photos.each do |photo| %>
+  <ul>
+    <li>
+      <%= link_to "delete", photo, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+      <a href="<%= photo.image.url %>" data-lightbox="photography">
+        <img src="<%= photo.image.url(:medium) %>" />
+      </a>
+    </li>
+  </ul>
+<% end %>

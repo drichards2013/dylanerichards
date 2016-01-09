@@ -35,7 +35,11 @@ class PhotosController < ApplicationController
 
   def destroy
     @photo.destroy
-    redirect_to photography_path, notice: 'Photo was successfully deleted'
+    redirect_to :back, notice: 'Photo was successfully deleted'
+  end
+
+  def manage
+    @photos = Photo.all
   end
 
   private
