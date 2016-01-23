@@ -14,6 +14,10 @@ describe Post do
 
   describe "#pretty_created_at" do
     it "formats the date" do
+      time = Time.local(2016, 1, 23)
+      Timecop.freeze(time)
+
+      expect(post.pretty_created_at).to eq "January 23 2016"
     end
   end
 end
