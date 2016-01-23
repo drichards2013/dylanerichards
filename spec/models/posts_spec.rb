@@ -11,4 +11,9 @@ describe Post do
       expect(post.to_param).to eq "#{post.id}-#{post.title.downcase}"
     end
   end
+
+  describe "#pretty_created_at" do
+    it "formats the date" do
+    end
+  end
 end
