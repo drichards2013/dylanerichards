@@ -10,7 +10,7 @@ class Post < ActiveRecord::Base
   self.per_page = 5
 
   def to_param
-    Parameterizer.parameterize(self)
+    Parameterizer.(self)
   end
 
   def pretty_created_at

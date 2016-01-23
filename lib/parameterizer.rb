@@ -1,5 +1,5 @@
 class Parameterizer
-  def self.parameterize(resource)
+  def self.call(resource)
     "#{resource.id}-#{resource.title.downcase}"
   end
 end
