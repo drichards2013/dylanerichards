@@ -17,8 +17,8 @@ describe PhotosController do
   describe '#create' do
     it 'saves the new post in the database' do
       expect {
-        FactoryGirl.create(:post)
-      }.to change(Post, :count).by 1
+        FactoryGirl.create(:photo)
+      }.to change(Photo, :count).by 1
     end
   end
 end
