@@ -12,14 +12,14 @@ group :production do
 end
 
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
-  gem 'shoulda-matchers'
   gem 'capybara'
-  gem 'rb-fsevent'
-  gem 'guard-rspec'
-  gem 'guard-livereload'
   gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'guard-livereload'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
   gem 'timecop'
 end
 
