@@ -86,7 +86,7 @@ nav {
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: 15vw;
   position: relative;
-  bottom: 100px;
+  top: 120px;
   z-index: -1;
   visibility: hidden;
 }
@@ -196,7 +196,8 @@ nav {
 #homequote {
   border-left: none;
   position: relative;
-  bottom: 90px;
+  top: 300px;
+  right: 210px;
   color: #fff;
   visibility: hidden;
 }
