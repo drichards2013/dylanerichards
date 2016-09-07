@@ -16,11 +16,29 @@
 
 <div id="dylanrichards">
   <h1 class='dylanrichards-main'>D.E<span class='highlight'>.</span>R.</h1>
-  <blockquote id='homequote'>
-    <%=  "#{@quote.body}" %>
-    <br>
-    <small><%= "#{@quote.author}" %></small>
-  </blockquote>
+
+  <div class="row">
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="col-md-4">
+      <blockquote id='homequote'>
+        <%=  "#{@quote.body}" %>
+        <br>
+        <small><%= "#{@quote.author}" %></small>
+      </blockquote>
+    </div>
+
+    <div class="col-md-4">
+    </div>
+
+    <div class="col-md-4">
+    </div>
+  </div>
+
 </div>
 
 <br>
