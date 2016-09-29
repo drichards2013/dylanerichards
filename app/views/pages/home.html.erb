@@ -17,21 +17,12 @@
 <div id="dylanrichards">
   <h1 class='dylanrichards-main'>D.E<span class='highlight'>.</span>R.</h1>
 
-  <div class="row">
-
-    <div class="col-md-4">
-      <blockquote id='homequote'>
-        <%=  "#{@quote.body}" %>
-        <br>
-        <small><%= "#{@quote.author}" %></small>
-      </blockquote>
-    </div>
-
-    <div class="col-md-4">
-    </div>
-
-    <div class="col-md-4">
-    </div>
+  <div class="col-md-4">
+    <blockquote id='homequote'>
+      <%=  "#{@quote.body}" %>
+      <br>
+      <small><%= "#{@quote.author}" %></small>
+    </blockquote>
   </div>
 
 </div>
@@ -39,7 +30,7 @@
 <br>
 
 <%# <% if !current_user %1> %>
-<%#   <%= link_to "hey, dylan :)", new_user_session_path, class: 'btn btn-default btn-xs admin-button' %1> %>
-<%# <% else %1> %>
-<%#   <%= link_to "bye, dylan :)", destroy_user_session_path, :method => :delete, class: 'btn btn-xs btn-default admin-button' %1> %>
-<%# <% end %1> %>
+  <%#   <%= link_to "hey, dylan :)", new_user_session_path, class: 'btn btn-default btn-xs admin-button' %1> %>
+  <%# <% else %1> %>
+    <%#   <%= link_to "bye, dylan :)", destroy_user_session_path, :method => :delete, class: 'btn btn-xs btn-default admin-button' %1> %>
+    <%# <% end %1> %>
