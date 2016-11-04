@@ -55,7 +55,8 @@ $(document).ready(function() {
   $('#container').imagesLoaded( function() {
     $('#container').masonry({
       itemSelector: '.item',
-      columnWidth: 70
+      columnWidth: 70,
+      isFitWidth: true
     });
   } );
 });
