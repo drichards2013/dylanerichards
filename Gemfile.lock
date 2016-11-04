@@ -81,7 +81,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
-    eventmachine (1.0.3)
+    eventmachine (1.2.0.1)
     execjs (2.0.2)
     factory_girl (4.4.0)
       activesupport (>= 3.0.0)
@@ -106,6 +106,8 @@ GEM
     hike (1.2.3)
     http_parser.rb (0.6.0)
     i18n (0.6.9)
+    imagesLoaded_rails (4.1.0)
+      railties (>= 3.1)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
@@ -123,6 +125,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    masonry-rails (0.2.4)
+      railties
     method_source (0.8.2)
     mime-types (1.25.1)
     minitest (4.7.5)
@@ -256,9 +260,11 @@ DEPENDENCIES
   factory_girl_rails
   guard-livereload
   guard-rspec
+  imagesLoaded_rails
   jbuilder (~> 1.2)
   jquery-rails
   lightbox2-rails
+  masonry-rails
   paperclip (~> 3.4.1)
   pg
   rails (= 4.0.2)
@@ -276,4 +282,4 @@ DEPENDENCIES
   will_paginate (~> 3.0)
 
 BUNDLED WITH
-   1.10.5
+   1.13.6

@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require bootstrap-wysihtml5
 //= require bootstrap
+//= require masonry/jquery.masonry
+//= require imagesloaded
 //= require lightbox
 //= require_tree .
 
@@ -49,4 +51,11 @@ $(document).ready(function() {
   setTimeout(function() {
     $("#photos").css("visibility", "visible").addClass("animated fadeIn")
   }, 400);
+
+  $('#container').imagesLoaded( function() {
+    $('#container').masonry({
+      itemSelector: '.item',
+      columnWidth: 70
+    });
+  } );
 });

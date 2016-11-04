@@ -11,7 +11,23 @@
  *= require_self
  *= require bootstrap-wysihtml5
  *= require lightbox
+ *= require 'masonry/basic'
+ *= require 'masonry/centered'
+ *= require 'masonry/fluid'
+ *= require 'masonry/gutters'
+ *= require 'masonry/infinitescroll'
+ *= require 'masonry/right-to-left'
+ *= require 'masonry/transitions'
  *= require_tree .
  */
 
- @import 'bootstrap';
+@import 'bootstrap';
+
+#container {
+  padding: 5px;
+}
+
+.item {
+  float: left;
+  margin: 5px;
+}
