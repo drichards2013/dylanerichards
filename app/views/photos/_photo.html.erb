@@ -1,4 +1,4 @@
 <a href="<%= photo.image.url %>" data-lightbox="photography">
-  <img src="<%= photo.image.url(:large) %>" class="item <%= ['w2', 'h2'].sample %>" />
+  <img src="<%= photo.image.url(photo.random_size) %>" class="item <%= ['w2', 'h2'].sample %>" />
 </a>
 
