@@ -7,6 +7,6 @@ class Photo < ActiveRecord::Base
   validates :image, presence: true
 
   def random_size
-    [:xmedium, :medium, :large].sample
+    [:xmedium, :medium, :small].sample
   end
 end
