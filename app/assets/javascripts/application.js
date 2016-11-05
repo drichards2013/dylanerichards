@@ -56,8 +56,6 @@ $(document).ready(function() {
     $('#container').masonry({
       itemSelector: '.item',
       columnWidth: 70,
-      isOriginLeft: true,
-      isFitWidth: true
     });
   } );
 });
