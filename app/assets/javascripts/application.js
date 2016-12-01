@@ -30,11 +30,16 @@ $(document).ready(function() {
 
   setTimeout(function() {
     $(".dylanrichards-main").css("visibility", "visible").addClass("animated fadeIn")
-  }, 750);
+  }, 450);
 
   setTimeout(function() {
     $("#homequote").css("visibility", "visible").addClass("animated fadeIn")
-  }, 900);
+  }, 600);
+
+  setTimeout(function() {
+    $(".self-image").css("visibility", "visible").addClass("animated fadeIn")
+  }, 750);
+
 
   setTimeout(function() {
     $(".pagetitle").css("visibility", "visible").addClass("animated fadeIn")
