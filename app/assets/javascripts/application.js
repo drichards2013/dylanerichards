@@ -34,11 +34,11 @@ $(document).ready(function() {
 
   setTimeout(function() {
     $("#homequote").css("visibility", "visible").addClass("animated fadeIn")
-  }, 600);
+  }, 500);
 
   setTimeout(function() {
     $(".self-image").css("visibility", "visible").addClass("animated fadeIn")
-  }, 750);
+  }, 500);
 
 
   setTimeout(function() {
