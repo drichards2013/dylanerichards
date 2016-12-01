@@ -17,6 +17,8 @@ Dylanrichards::Application.routes.draw do
 
   get '/manage-photos' => 'photos#manage', as: 'manage_photos'
 
+  get '/escalate' => 'redirects#escalate', as: 'escalate_website'
+
 
   get 'tags/:tag', to: 'posts#index', as: :tag
 
