@@ -15,15 +15,25 @@
 <% end %>
 
 <div id="dylanrichards">
-  <h1 class='dylanrichards-main'>D.E<span class='highlight'>.</span>R.</h1>
 
-  <div class="col-md-4">
-    <blockquote id='homequote'>
-      <%=  "#{@quote.body}" %>
-      <br>
-      <small><%= "#{@quote.author}" %></small>
-    </blockquote>
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class='dylanrichards-main'>Hi, I'm Dylan<span class="highlight">.</span></h1>
+
+      <blockquote id='homequote'>
+        <%=  "#{@quote.body}" %>
+        <br>
+        <small><%= "#{@quote.author}" %></small>
+      </blockquote>
+
+    </div>
+
+
+    <div class="col-md-6">
+      <%= image_tag "self.png", class: "self-image" %>
+    </div>
   </div>
+
 
 </div>
 
