@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     if params[:tag]
       @posts = Post.tagged_with(params[:tag]).paginate(page: params[:page])
     else
-      @posts = Post.all.paginate(page: params[:page])
+      @posts = Post.where(published: true).paginate(page: params[:page])
       @tags = Post.tag_counts_on(:tags)
     end
   end
@@ -41,6 +41,26 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     redirect_to posts_url
+  end
+
+  def posts
+    @posts = Post.where(published: false)
+  end
+
+  def publish
+    post = Post.find(params[:post].split("-").first.to_i)
+    post.published = true
+    post.save
+
+    redirect_to "/blog"
+  end
+
+  def unpublish
+    post = Post.find(params[:post].split("-").first.to_i)
+    post.published = false
+    post.save
+
+    redirect_to "/blog"
   end
 
   private
