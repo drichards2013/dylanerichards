@@ -52,7 +52,7 @@ class PostsController < ApplicationController
     post.published = true
     post.save
 
-    redirect_to "/blog"
+    redirect_to :back
   end
 
   def unpublish
@@ -60,7 +60,7 @@ class PostsController < ApplicationController
     post.published = false
     post.save
 
-    redirect_to "/blog"
+    redirect_to :back
   end
 
   private
