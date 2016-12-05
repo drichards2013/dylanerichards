@@ -28,7 +28,7 @@
   <div class="actions">
     <%= f.submit 'Add Post', class: 'btn btn-sm btn-default' %>
 
-    <% if @post.published == true %>
+    <% if @post.try(:published )== true %>
       <%= link_to 'Unpublish', unpublish_path(post: @post), class: 'btn btn-sm btn-warning' %>
     <% else %>
       <%= link_to 'Publish', publish_path(post: @post), class: 'btn btn-sm btn-success' %>
