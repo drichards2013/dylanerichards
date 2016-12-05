@@ -4,6 +4,8 @@ Dylanrichards::Application.routes.draw do
   get '/quotes/stats', to: 'quotes#stats', as: 'quotes_stats'
 
   get 'blog/posts' => 'posts#posts', as: 'blog_posts'
+  get 'blog/publish' => 'posts#publish', as: 'publish'
+  get 'blog/unpublish' => 'posts#unpublish', as: 'unpublish'
 
   resources :quotes, :photos
   resources :posts, path: 'blog'
@@ -13,8 +15,6 @@ Dylanrichards::Application.routes.draw do
   get '/reading-list/edit' => 'reading_lists#edit', id: 1
 
   get 'blog' => 'posts#index', as: 'blog'
-  get 'blog/publish' => 'posts#publish', as: 'publish'
-  get 'blog/unpublish' => 'posts#unpublish', as: 'unpublish'
 
   get 'projects' => 'pages#projects', as: 'projects'
   get 'photography' => 'photos#index', as: 'photogallery'
