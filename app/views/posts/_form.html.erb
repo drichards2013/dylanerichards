@@ -29,10 +29,11 @@
     <div class="actions">
       <%= f.submit 'Add Post', class: 'btn btn-sm btn-default' %>
 
+      <%# <% require "pry"; binding.pry %1> %>
       <% if @post.try(:published) == true %>
-        <%= link_to 'Unpublish', unpublish_path(post: @post), class: 'btn btn-sm btn-warning' %>
+        <%= link_to 'Unpublish', unpublish_path(id: @post.id), class: 'btn btn-sm btn-warning' %>
       <% else %>
-        <%= link_to 'Publish', publish_path(post: @post), class: 'btn btn-sm btn-success' %>
+        <%= link_to 'Publish', publish_path(id: @post.id), class: 'btn btn-sm btn-success' %>
       <% end %>
 
     </div>

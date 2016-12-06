@@ -48,7 +48,7 @@ class PostsController < ApplicationController
   end
 
   def publish
-    post = Post.find(params[:post].split("-").first.to_i)
+    post = Post.friendly.find(params[:id])
     post.published = true
     post.save
 
@@ -56,7 +56,7 @@ class PostsController < ApplicationController
   end
 
   def unpublish
-    post = Post.find(params[:post].split("-").first.to_i)
+    post = Post.friendly.find(params[:id])
     post.published = false
     post.save
 
@@ -66,7 +66,7 @@ class PostsController < ApplicationController
   private
 
   def set_post
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 
   def post_params

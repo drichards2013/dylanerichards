@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161205053757) do
+ActiveRecord::Schema.define(version: 20161206090627) do
 
   create_table "photos", force: true do |t|
     t.string   "name"
@@ -29,7 +29,10 @@ ActiveRecord::Schema.define(version: 20161205053757) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "published",  default: false
+    t.string   "slug"
   end
+
+  add_index "posts", ["slug"], name: "index_posts_on_slug", unique: true
 
   create_table "quotes", force: true do |t|
     t.string   "body"
