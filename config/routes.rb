@@ -23,6 +23,7 @@ Dylanrichards::Application.routes.draw do
 
   get '/escalate' => 'redirects#escalate', as: 'escalate_website'
   get '/masterclass' => 'redirects#masterclass', as: 'masterclass'
+  get '/vsco' => 'redirects#vsco', as: 'vsco'
 
 
   get 'tags/:tag', to: 'posts#index', as: :tag
