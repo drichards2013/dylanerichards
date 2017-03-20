@@ -22,6 +22,7 @@ Dylanrichards::Application.routes.draw do
   get '/manage-photos' => 'photos#manage', as: 'manage_photos'
 
   get '/escalate' => 'redirects#escalate', as: 'escalate_website'
+  get '/vip' => 'redirects#vip', as: 'escalate_vip'
   get '/masterclass' => 'redirects#masterclass', as: 'masterclass'
   get '/vsco' => 'redirects#vsco', as: 'vsco'
 

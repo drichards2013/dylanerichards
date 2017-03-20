@@ -10,4 +10,8 @@ class RedirectsController < ApplicationController
   def vsco
     redirect_to "https://www.escalatebook.com/vsco"
   end
+
+  def vip
+    redirect_to "https://www.escalatebook.com/vip"
+  end
 end
