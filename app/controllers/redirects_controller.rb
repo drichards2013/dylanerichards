@@ -14,4 +14,8 @@ class RedirectsController < ApplicationController
   def vip
     redirect_to "https://www.escalate-photography.com/vip"
   end
+
+  def presets
+    redirect_to "https://www.escalate-photography.com/presets"
+  end
 end

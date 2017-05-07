@@ -25,6 +25,7 @@ Dylanrichards::Application.routes.draw do
   get '/vip' => 'redirects#vip', as: 'escalate_vip'
   get '/masterclass' => 'redirects#masterclass', as: 'masterclass'
   get '/vsco' => 'redirects#vsco', as: 'vsco'
+  get '/presets' => 'redirects#presets', as: 'presets'
 
 
   get 'tags/:tag', to: 'posts#index', as: :tag
