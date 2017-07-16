@@ -3,6 +3,10 @@ class RedirectsController < ApplicationController
     redirect_to "https://www.escalate-photography.com"
   end
 
+  def e_book
+    redirect_to "https://www.escalate-photography.com/escalate-e-book"
+  end
+
   def masterclass
     redirect_to "https://www.escalate-photography.com/masterclass"
   end
