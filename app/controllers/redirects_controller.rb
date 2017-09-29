@@ -20,6 +20,6 @@ class RedirectsController < ApplicationController
   end
 
   def presets
-    redirect_to "https://www.escalate-photography.com/presets"
+    redirect_to "https://www.escalate-photography.com/presets-discount"
   end
 end
