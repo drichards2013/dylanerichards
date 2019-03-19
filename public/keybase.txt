@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/dylanerichards
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://dylanerichards.com
+  * I am dylanerichards (https://keybase.io/dylanerichards) on keybase.
+  * I have a public key ASCe5ovvtncj3b6yQevyKLq2erkT6cm35ZiARvm36wPA8Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209ee68befb67723ddbeb241ebf228bab67ab913e9c9b7e5988046f9b7eb03c0f00a",
+      "host": "keybase.io",
+      "kid": "01209ee68befb67723ddbeb241ebf228bab67ab913e9c9b7e5988046f9b7eb03c0f00a",
+      "uid": "9af4766d3e9198dd6f6dd73e4cf82819",
+      "username": "dylanerichards"
+    },
+    "merkle_root": {
+      "ctime": 1552976296,
+      "hash": "5c5740b5bbdc4cc860ad0adaaf8a5d5f0136e70c7a819f8b974da44f3f56c4eaf8df366a94f279d1641825764978cd4c184fb3429173efb278d63919322870ef",
+      "hash_meta": "09cfed2660bbd1d05637a645284076992c636cbe0f608cc6e83dc998e5b26818",
+      "seqno": 4978468
+    },
+    "service": {
+      "entropy": "dAz8domQbwYXI45BhIbAi5Fj",
+      "hostname": "dylanerichards.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1552976335,
+  "expire_in": 504576000,
+  "prev": "e951523ee11ba5cc98678794c8f96e2e60e2af341aca0b46ebbbd58818ec84ad",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnuaL77Z3I92+skHr8ii6tnq5E+nJt+WYgEb5t+sDwPAKp3BheWxvYWTESpcCBcQg6VFSPuEbpcyYZ4eUyPluLmDirzQaygtG67vViBjshK3EIOivaCe6QGLQRsobYHIDEQlkvq6UNUllSD4XYgymqi2yAgHCo3NpZ8RAF0YIW1MvM+9lsusAoU3rWQ5A+U31gSRh4VBOuNFcrbMfIl9gZ6pXHX27PfpvanG1DFCTAyUQPU6v08B+2XXcBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKMmIRV1H5dUHp1ELNhumkW7kz4YcBFCBFyFt5H6BA7Fo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dylanerichards
+
+==================================================================
